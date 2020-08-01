@@ -1,0 +1,67 @@
+{
+    "name": "aestous",
+    "type": "C51",
+    "mode": "Release",
+    "toolchain": "SDCC",
+    "uploader": "STVP",
+    "dependenceList": [
+        {
+            "groupName": "custom",
+            "depList": [
+                {
+                    "name": "default",
+                    "incList": [
+                        ".\\dependence"
+                    ],
+                    "libList": [],
+                    "sourceDirList": [],
+                    "defineList": []
+                }
+            ]
+        },
+        {
+            "groupName": "build-in",
+            "depList": [
+                {
+                    "name": "default",
+                    "incList": [],
+                    "libList": [],
+                    "sourceDirList": [],
+                    "defineList": []
+                },
+                {
+                    "name": "toolchain",
+                    "incList": [
+                        "c:\\Program Files\\SDCC\\include",
+                        "c:\\Program Files\\SDCC\\non-free\\include",
+                        ".\\dependence\\build-in\\toolchain"
+                    ],
+                    "sourceDirList": [
+                        ".\\dependence\\build-in\\toolchain"
+                    ],
+                    "libList": [
+                        "c:\\Program Files\\SDCC\\lib"
+                    ],
+                    "defineList": []
+                }
+            ]
+        }
+    ],
+    "compileConfig": {
+        "options": "null"
+    },
+    "srcDirs": [
+        ".\\dependence",
+        ".\\src"
+    ],
+    "excludeList": [],
+    "outDir": ".\\out",
+    "deviceName": null,
+    "packDir": null,
+    "uploadConfig": {
+        "deviceName": "STM8S003F3",
+        "bin": ".\\out\\SDCC\\aestous.hex",
+        "eepromFile": "null",
+        "optionByteFile": "null"
+    }
+}
