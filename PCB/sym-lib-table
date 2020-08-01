@@ -1,0 +1,9 @@
+(sym_lib_table
+  (lib (name MCU_ST_STM8)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/MCU_ST_STM8.lib)(options "")(descr ""))
+  (lib (name power)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/power.lib)(options "")(descr ""))
+  (lib (name Connector)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Connector.lib)(options "")(descr ""))
+  (lib (name Interface_USB)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Interface_USB.lib)(options "")(descr ""))
+  (lib (name LED)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/LED.lib)(options "")(descr ""))
+  (lib (name Device)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Device.lib)(options "")(descr ""))
+  (lib (name Interface_Optical)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Interface_Optical.lib)(options "")(descr ""))
+)

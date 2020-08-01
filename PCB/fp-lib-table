@@ -1,0 +1,12 @@
+(fp_lib_table
+  (lib (name Capacitor_SMD)(type KiCad)(uri ${KIPRJMOD}/kicad-footprints/Capacitor_SMD.pretty)(options "")(descr ""))
+  (lib (name Fuse)(type KiCad)(uri ${KIPRJMOD}/kicad-footprints/Fuse.pretty)(options "")(descr ""))
+  (lib (name Connector_PinHeader_2.54mm)(type KiCad)(uri ${KIPRJMOD}/kicad-footprints/Connector_PinHeader_2.54mm.pretty)(options "")(descr ""))
+  (lib (name LED_SMD)(type KiCad)(uri ${KIPRJMOD}/kicad-footprints/LED_SMD.pretty)(options "")(descr ""))
+  (lib (name Package_SO)(type KiCad)(uri ${KIPRJMOD}/kicad-footprints/Package_SO.pretty)(options "")(descr ""))
+  (lib (name Resistor_SMD)(type KiCad)(uri ${KIPRJMOD}/kicad-footprints/Resistor_SMD.pretty)(options "")(descr ""))
+  (lib (name Connector)(type KiCad)(uri ${KIPRJMOD}/kicad-footprints/Connector.pretty)(options "")(descr ""))
+  (lib (name Inductor_SMD)(type KiCad)(uri ${KIPRJMOD}/kicad-footprints/Inductor_SMD.pretty)(options "")(descr ""))
+  (lib (name Sensor)(type KiCad)(uri ${KIPRJMOD}/kicad-footprints/Sensor.pretty)(options "")(descr ""))
+  (lib (name Connector_USB)(type KiCad)(uri ${KIPRJMOD}/kicad-footprints/Connector_USB.pretty)(options "")(descr ""))
+)
