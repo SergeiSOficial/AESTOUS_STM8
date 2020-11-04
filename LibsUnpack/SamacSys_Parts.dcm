@@ -1,0 +1,38 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 0603WAF2200T5E
+D Chip Resistor - Surface Mount 220Ohms +/-1% 1/10W 0603 RoHS
+F https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF2200T5E_C22962.pdf
+$ENDCMP
+#
+$CMP BLM18AG102SN1D
+D MURATA - BLM18AG102SN1D - Ferrite Bead, 0603 [1608 Metric], 1 kohm, 400 mA, BLM18A Series, 0.5 ohm, +/- 25%
+F http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb
+$ENDCMP
+#
+$CMP CL10B105KA8NNNC
+D Samsung Electro-Mechanics 0603 CL 1uF Ceramic Multilayer Capacitor, 25 V, +125C, X7R Dielectric, +/-10% SMD
+F http://www.samsungsem.com/global/support/product-search/mlcc/1206122_4290.jsp
+$ENDCMP
+#
+$CMP NCP15XH103F03RC
+D Murata 10k 100mW 0402 NTC Thermistor, 1 x 0.5 x 0.5mm
+F http://docs-emea.rs-online.com/webdocs/1423/0900766b81423c0a.pdf
+$ENDCMP
+#
+$CMP NE555DR
+D Single Precision Timer
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP STM8S003F3P6TR
+D STMICROELECTRONICS - STM8S003F3P6TR - MCU, 8BIT, STM8, 16MHZ, TSSOP-20
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/42/5a/27/87/ac/5a/44/88/DM00024550.pdf/files/DM00024550.pdf/jcr:content/translations/en.DM00024550.pdf
+$ENDCMP
+#
+$CMP U254-051T-4BHJ25-S2S
+D USB Connectors SMD RoHS
+F https://datasheet.lcsc.com/szlcsc/2002271812_XKB-Enterprise-U254-051T-4BHJ25-S2S_C319163.pdf
+$ENDCMP
+#
+#End Doc Library
