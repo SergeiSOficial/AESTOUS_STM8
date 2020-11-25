@@ -52,6 +52,8 @@ Mkfile.old
 dkms.conf
 *.eide.log
 
-Firmware\EWSTM8\IEC60335 STM8S105x
+Firmware/EWSTM8/IEC60335 STM8S105x
+*STM8S105x/
+*IEC60335 STM8S105x/
 *.dep
 *.pbi
