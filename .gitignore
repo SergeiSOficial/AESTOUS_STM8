@@ -53,3 +53,5 @@ dkms.conf
 *.eide.log
 
 Firmware\EWSTM8\IEC60335 STM8S105x
+*.dep
+*.pbi
