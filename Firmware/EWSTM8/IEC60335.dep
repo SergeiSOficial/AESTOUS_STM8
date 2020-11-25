@@ -1,0 +1,2836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>53583003</fileChecksum>
+    <configuration>
+        <name>IEC60335 STM8A626x</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_clockrun.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_clockstart.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\Src\main.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_main.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\cstartup.s</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_startup.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_clockstart.c</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_clockstart.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_classB_var.h</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_cpustart_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_cpurun_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_crc16_IAR.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\Src\stm8s_it.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_crcrun.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\List\IEC60335.map</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_transpRam.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_fullRam_IAR.asm</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_cpustart_IAR.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8_stl_fullRam_IAR.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_crcrun.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_main.o</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_transpRam.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_transpRam.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_classB_var.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_transpRam_Mc.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8_stl_transpRam.o</file>
+            <file>$PROJ_DIR$\..\inc\main.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_main.h</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_cpustart_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_param.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_startup.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8_stl_transpRam.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8_stl_clockstart.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8_stl_clockstart.pbi</file>
+            <file>$TOOLKIT_DIR$\lib\dbgstm8smn.a</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_transpRam_Mc.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8_stl_cpustart_IAR.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8_stl_crcrun.o</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_clockstart.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8_stl_clockrun.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8_stl_clockrun.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8_stl_main.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_clockrun.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8_stl_startup.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8_stl_main.o</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_startup.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_cpurun_IAR.asm</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8_stl_crcrun.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8_stl_crc16_IAR.o</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_clockstart.h</file>
+            <file>$PROJ_DIR$\macros.m</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8_stl_startup.o</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_startup.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_cpu.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_clockrun.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_crc16Run.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_param.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_lib.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_fullRam_Mc.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_main.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_fullRam_IAR.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8_stl_crc16_IAR.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_fullRam_Mc.h</file>
+            <file>$PROJ_DIR$\..\src\main.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_lib.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_transpRam_Mc.c</file>
+            <file>$PROJ_DIR$\..\Inc\stm8s.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_clockrun.h</file>
+            <file>$PROJ_DIR$\stm8s_stl_crc16_IAR.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_crc16Run.h</file>
+            <file>$PROJ_DIR$\..\inc\stm8s_it.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_cpu.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\cstartup.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_transpRam_Mx.o</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_transpRam_Mx.h</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\Inc\stm8s_it.h</file>
+            <file>$PROJ_DIR$\cstartup.s</file>
+            <file>$PROJ_DIR$\stm8s_stl_fullRam_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\..\Drivers\BSP\STM8128_EVAL\mono_lcd_WL.c</file>
+            <file>$PROJ_DIR$\..\src\stm8s_it.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\Inc\main.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_transpRam_Mx.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\macros.m</file>
+            <file>$TOOLKIT_DIR$\inc\vregs.inc</file>
+            <file>$PROJ_DIR$\..\..\..\Drivers\BSP\STM8128_EVAL\mono_lcd_wl.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_transpRam_Mx.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\mono_lcd_WL.pbi</file>
+            <file>$PROJ_DIR$\stm8s_stl_cpustart_IAR.asm</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_crc16_IAR.o</file>
+            <file>$PROJ_DIR$\lnkstm8af32k.icf</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_crcrun.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_clockrun.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_clockstart.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_main.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Exe\IEC60335.out</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_crcrun.c</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8_stl_cpurun_IAR.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_crc16_IAR.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_clockrun.c</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\main.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_it.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_transpRam.o</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_main.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_crc16_IAR.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_fullRam_IAR.asm</file>
+            <file>$PROJ_DIR$\stm8s_stl_cpurun_IAR.asm</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_transpRam_Mc.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_it.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_cpurun_IAR.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_transpRam.pbi</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\Inc\stm8s.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_transpRam.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\mono_lcd_WL.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_startup.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8A626x\Obj\stm8s_stl_startup.pbi</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 105 15</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_clockrun.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 42</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 41</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 60 91 88 77 89 55 67 40 14 120 62 122 92 59 54 28 56 39 57 58 61 23 24</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 57 91 54 77 55 60 122 56 61 62 88 40 67 24 59 28 39 58 23 120 89 14 92</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_clockstart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 33</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 34</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 60 91 88 77 89 55 67 40 14 120 62 122 92 59 54 28 56 39 57 58 61 23 24</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 88 89 28 58 62 67 59 39 23 77 55 24 91 122 54 56 57 61 120 40 14 92 60</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\Src\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 110</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 125</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 60 91 88 77 89 55 67 40 14 120 62 122 92 59 54 28 56 39 57 58 61 23 24 87</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55 59 39 77 87 28 23 24 91 122 54 56 58 62 89 67 88 60 57 61 120 40 14 92</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 46</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 43</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 60 91 88 77 89 55 67 40 14 120 62 122 92 59 54 28 56 39 57 58 61 23 24 87</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55 39 77 59 23 87 28 58 62 89 67 88 24 91 122 54 56 57 61 120 40 14 92 60</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\cstartup.s</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 79</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 93 94</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_startup.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 53</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 60 91 88 77 89 55 67 40 14 120 62 122 92 59 54 28 56 39 57 58 61 23 87 24</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 77 54 55 91 57 122 56 61 62 88 40 67 59 87 24 28 39 58 23 120 89 14 60 92</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_clockstart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 103</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 7</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 70 91 88 77 89 55 67 40 14 120 62 122 92 30 31 63 78 51 73 75 68 123 8</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 88 30 123 51 77 92 91 63 75 120 89 8 122 31 78 73 68 62 14 70 40 55 67</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_cpustart_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 37</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_cpurun_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 107</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_crc16_IAR.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 50</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 66</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 122 92 60 91 88 77 89 55 67 40 14 120 62 59 54 28 56 39 57 58 61 23 24 87</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 77 54 55 59 24 92 57 60 87 122 56 61 62 88 40 67 91 28 39 58 23 120 89 14</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\Src\stm8s_it.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 111</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 118</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 82 122 92 60 91 88 77 89 55 67 40 14 120 62 59 54 28 56 39 57 58 61 23 24 87</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 77 54 55 59 24 92 57 60 87 122 56 61 62 88 40 67 82 91 28 39 58 23 120 89 14</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_crcrun.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 38</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 49</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 60 91 88 77 89 55 67 40 14 120 62 122 92 59 54 28 56 39 57 58 61 23 24 87</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55 59 39 77 87 28 23 24 91 122 54 56 58 62 89 67 88 60 57 61 120 40 14 92</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_transpRam.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 26</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 32</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 60 91 88 77 89 55 67 40 14 120 62 122 92 59 54 28 56 39 57 58 61 23 24</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 88 23 59 89 39 77 60 28 58 120 14 24 91 122 54 56 57 61 62 40 55 67 92</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_fullRam_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 19</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_transpRam.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 112</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 121</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 70 91 88 77 89 55 67 40 14 120 62 122 92 30 31 63 78 51 73 75 68 123 8</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55 63 91 75 77 30 51 123 8 122 31 78 73 68 62 89 67 88 70 120 40 14 92</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_cpustart_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 18</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_startup.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 126</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 127</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 70 91 88 77 89 55 67 40 14 120 62 122 92 30 31 63 78 51 73 75 68 123 87 8</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 120 63 14 91 75 30 51 123 88 89 77 87 8 122 31 78 73 68 62 40 55 67 92 70</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_cpurun_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 119</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\src\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 110</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 125</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 72 92 70 30 31 63 78 51 73 75 68 36 81 8 95 27 91 88 77 89 55 67 40 14 120 62</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 88 14 51 70 40 27 30 36 62 8 63 75 77 95 91 92 31 78 73 68 81 72 120 89 55 67</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_transpRam_Mc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 25</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 117</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 72 92 70 30 31 63 78 51 73 75 68 36 81 8</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 92 81 31 8 73 70 78 68 72 30 63 51 75 36</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm8s_stl_crc16_IAR.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 99</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 108</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 72 92 70 30 31 63 78 51 73 75 68 36 81 8 27</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 51 8 30 36 70 27 63 75 72 92 31 78 73 68 81</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cstartup.s</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 79</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 52 94</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm8s_stl_fullRam_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 65</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Drivers\BSP\STM8128_EVAL\mono_lcd_WL.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 124</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 97</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 95 72 92 27</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 72 95 92 27</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\src\stm8s_it.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 111</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 118</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 76 72 92 70 30 31 63 78 51 73 75 68 36 81 8 91 88 77 89 55 67 40 14 120 62 27</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 30 77 36 89 27 51 70 62 67 8 63 75 55 91 72 92 31 78 73 68 81 88 120 40 14 76</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_transpRam_Mx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 80</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 96</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 72 92 70 30 31 63 78 51 73 75 68 36 81 8</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 92 68 8 78 70 31 73 81 72 30 63 51 75 36</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm8s_stl_cpustart_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 18</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\IEC60335 STM8A626x\Exe\IEC60335.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 15</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 100 79 110 42 33 107 37 50 38 19 46 53 26 111 64 35</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_crcrun.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 20</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 101</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 70 91 88 77 89 55 67 40 14 120 62 122 92 30 31 63 78 51 73 75 68 123 8 87</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55 63 91 75 77 30 51 123 8 122 31 78 73 68 62 89 67 88 70 87 120 40 14 92</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_clockrun.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 102</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 44</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 70 91 88 77 89 55 67 40 14 120 62 122 92 30 31 63 78 51 73 75 68 123 8</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55 63 91 75 77 30 51 123 8 122 31 78 73 68 62 89 67 88 70 120 40 14 92</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 21</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 104</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 70 91 88 77 89 55 67 40 14 120 62 122 92 30 31 63 78 51 73 75 68 123 8 87</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 67 91 75 62 88 63 89 87 30 51 123 77 55 8 122 31 78 73 68 120 40 14 92 70</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_crc16_IAR.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 99</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 108</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 122 92 70 91 88 77 89 55 67 40 14 120 62 30 31 63 78 51 73 75 68 123 8 87</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 120 63 14 30 8 91 75 70 87 51 123 88 89 77 122 92 31 78 73 68 62 40 55 67</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_fullRam_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 65</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm8s_stl_cpurun_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 119</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>IEC60335 STM8S105x</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_clockrun.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_clockstart.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\Src\main.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_main.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\cstartup.s</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_startup.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_clockstart.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_classB_var.h</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_cpustart_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_cpurun_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_crc16_IAR.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\Src\stm8s_it.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_crcrun.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_transpRam.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_fullRam_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_transpRam.c</file>
+            <file>$PROJ_DIR$\..\inc\main.h</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_cpustart_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_param.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_startup.h</file>
+            <file>$TOOLKIT_DIR$\lib\dbgstm8smn.a</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_transpRam_Mc.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_startup.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_cpurun_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_clockstart.h</file>
+            <file>$PROJ_DIR$\macros.m</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_startup.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_clockrun.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\mono_lcd_WL.__cstat.et</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_startup.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_transpRam_Mx.__cstat.et</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_clockrun.o</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_fullRam_IAR.o</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_clockrun.c</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_cpustart_IAR.o</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\inc\stm8s_stl_classB_var.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_clockstart.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_main.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_clockstart.o</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\inc\stm8s_stl_lib.h</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\inc\stm8s_stl_main.h</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\inc\stm8s_stl_fullRam_Mc.h</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\inc\stm8s_stl_cpu.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_crc16_IAR.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_cpurun_IAR.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_clockstart.xcl</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_clockrun.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_crcrun.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_it.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_fullRam_IAR.o</file>
+            <file>$PROJ_DIR$\..\..\Utilities\mono_lcd_wl.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_clockstart.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\Utilities\mono_lcd_WL.c</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_clockstart.pbi</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_startup.c</file>
+            <file>$PROJ_DIR$\..\..\Source\stm8s_it.c</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\inc\stm8s_stl_clockstart.h</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_crc16_IAR.c</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\inc\stm8s_stl_transpRam_Mc.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_crc16_IAR.__cstat.et</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_it.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\inc\stm8s_stl_transpRam_Mx.h</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_crcrun.c</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_transpRam_Mc.c</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\inc\stm8s_stl_crc16Run.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_transpRam.o</file>
+            <file>$PROJ_DIR$\..\..\Source\main.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_transpRam_Mc.__cstat.et</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_clockrun.__cstat.et</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\IEC60335.pbd</file>
+            <file>$PROJ_DIR$\..\..\Source\stm8s.h</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\inc\stm8s_stl_clockrun.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_crcrun.xcl</file>
+            <file>$PROJ_DIR$\..\..\Source\main.c</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\cstartup.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_main.xcl</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_crcrun.o</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_cpurun_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_cpustart_IAR.asm</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_it.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Exe\IEC60335.out</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\mono_lcd_WL.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\mono_lcd_WL.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_main.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_cpurun_IAR.o</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_main.c</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\main.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_crcrun.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_fullRam_IAR.asm</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_startup.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_transpRam.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_main.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_startup.__cstat.et</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_main.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_main.__cstat.et</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_crc16_IAR.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_transpRam_Mx.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_transpRam_Mx.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_transpRam_Mc.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_crc16_IAR.o</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\List\IEC60335.map</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_transpRam_Mx.c</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_crcrun.pbi</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\inc\stm8s_stl_startup.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_transpRam.pbi</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_transpRam.xcl</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_clockrun.xcl</file>
+            <file>$PROJ_DIR$\..\..\SelfTestLib\inc\stm8s_stl_param.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_crc16_IAR.xcl</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_cpustart_IAR.o</file>
+            <file>$PROJ_DIR$\lnkstm8s105xx.icf</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\main.xcl</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_startup.xcl</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_it.xcl</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_clockstart.o</file>
+            <file>$PROJ_DIR$\..\..\Source\stm8s_it.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8s_stl_transpRam_Mc.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_fullRam_Mc.h</file>
+            <file>$PROJ_DIR$\..\src\main.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_lib.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_transpRam_Mc.c</file>
+            <file>$PROJ_DIR$\..\Inc\stm8s.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_clockrun.h</file>
+            <file>$PROJ_DIR$\stm8s_stl_crc16_IAR.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_crc16Run.h</file>
+            <file>$PROJ_DIR$\..\inc\stm8s_it.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_cpu.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_transpRam_Mx.h</file>
+            <file>$PROJ_DIR$\cstartup.s</file>
+            <file>$PROJ_DIR$\stm8s_stl_fullRam_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\..\Drivers\BSP\STM8128_EVAL\mono_lcd_WL.c</file>
+            <file>$PROJ_DIR$\..\src\stm8s_it.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\Inc\main.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_transpRam_Mx.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$TOOLKIT_DIR$\inc\vregs.inc</file>
+            <file>$PROJ_DIR$\..\..\..\Drivers\BSP\STM8128_EVAL\mono_lcd_wl.h</file>
+            <file>$PROJ_DIR$\stm8s_stl_cpustart_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_crcrun.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_clockrun.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_main.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_crc16_IAR.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_fullRam_IAR.asm</file>
+            <file>$PROJ_DIR$\stm8s_stl_cpurun_IAR.asm</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\Inc\stm8s.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_transpRam.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\inc\stm8_stl_transpRam.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\inc\stm8_stl_classB_var.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_rst.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\inc\stm8_stl_crc16Run.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\inc\stm8_stl_fullRam_Mc.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_tim4.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_uart1.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\inc\stm8_stl_param.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_wwdg.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\inc\stm8_stl_cpu.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\inc\stm8_stl_clockstart.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_tim1.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_i2c.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_itc.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_tim2.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\inc\stm8_stl_clockrun.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_spi.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\inc\stm8_stl_startup.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_iwdg.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\inc\stm8_stl_main.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_awu.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_clk.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_exti.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_flash.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_gpio.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_beep.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_adc1.h</file>
+            <file>$PROJ_DIR$\..\inc\stm8s_conf.h</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_transpRam.c</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_clockstart.c</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_main.c</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_crc16_IAR.c</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_cpustart_IAR.asm</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_startup.c</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_cpurun_IAR.asm</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_fullRam_IAR.asm</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_crcrun.c</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_clockrun.c</file>
+            <file>$PROJ_DIR$\..\src\macros.m</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_clockrun.__cstat.et</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\inc\stm8_stl_lib.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_startup.__cstat.et</file>
+            <file>$PROJ_DIR$\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s.h</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_clockstart.__cstat.et</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_main.__cstat.et</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_crc16_IAR.__cstat.et</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_transpRam.__cstat.et</file>
+            <file>$PROJ_DIR$\IEC60335 STM8S105x\Obj\stm8_stl_crcrun.__cstat.et</file>
+            <file>$PROJ_DIR$\..\src\cstartup.s</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 85 106</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_clockrun.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 198</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 113</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_clockstart.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 202</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 50</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\Src\main.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 105</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 118</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_main.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 203</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 80</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\cstartup.s</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 79</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_startup.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 200</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 119</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_clockstart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 121</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 58</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 127 145 142 134 143 34 124 23 13 156 39 157 146 19 20 41 135 26 130 132 125 158 7</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 142 19 158 26 13 146 145 41 132 156 7 157 20 135 130 125 134 39 143 127 23 34 124</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_cpustart_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 37</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_cpurun_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 49</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_crc16_IAR.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 204</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 115</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\Src\stm8s_it.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 65</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 120</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_crcrun.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 206</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 77</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_transpRam.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 205</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 112</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_fullRam_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 35</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_transpRam.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 95</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 111</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 127 145 142 134 143 34 124 23 13 156 39 157 146 19 20 41 135 26 130 132 125 158 7</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 143 142 41 145 132 19 26 158 39 124 7 157 20 135 130 125 134 34 127 156 23 13 146</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_cpustart_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 116</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_startup.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 94</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 31</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 127 145 142 134 143 34 124 23 13 156 39 157 146 19 20 41 135 26 130 132 125 158 141 7</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 34 26 134 19 158 145 41 132 39 143 124 142 141 7 157 20 135 130 125 156 23 13 146 127</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_cpurun_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 89</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_clockrun.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 33</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 73</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 51</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 75 146 44 114 109 45 47 61 76 69 46 63 66 38</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 76 38 109 66 44 146 47 46 114 75 45 61 69 63</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_clockstart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 121</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 56</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 58</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 75 146 44 114 109 45 47 61 76 69 46 63 66 38 145 142 134 143 34 124 23 13 156 39</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45 142 69 34 38 114 61 63 156 23 44 145 146 109 47 76 46 66 134 39 143 124 75 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Utilities\mono_lcd_WL.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 87</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 30</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 86</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 55 75 146 71</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 75 146 55 71</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_startup.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 94</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 97</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 31</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 75 146 44 114 109 45 47 61 76 69 46 63 66 71 38</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 46 38 146 71 47 44 109 76 66 75 114 45 61 69 63</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Source\stm8s_it.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 53</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 65</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 84</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 122 75 146 44 114 109 45 47 61 76 69 46 63 66 38 55 145 142 134 143 34 124 23 13 156 39 71</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 75 45 143 145 69 39 38 114 61 63 134 44 55 71 146 109 47 76 46 66 142 156 23 13 122 34 124</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_crc16_IAR.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 104</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 64</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 100</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 75 146 44 114 109 45 47 61 76 69 46 63 66 38 71</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45 38 69 44 71 114 61 63 75 146 109 47 76 46 66</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_crcrun.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 81</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 92</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 108</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 75 146 44 114 109 45 47 61 76 69 46 63 66 38 71</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 114 63 38 61 44 71 45 69 75 146 109 47 76 46 66</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_transpRam_Mc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 123</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 72</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 103</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 75 146 44 114 109 45 47 61 76 69 46 63 66 38</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 47 38 46 44 146 109 76 66 75 114 45 61 69 63</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Source\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 91</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 105</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 110</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 75 146 44 114 109 45 47 61 76 69 46 63 66 38 55 71 145 142 134 143 34 124 23 13 156 39</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 124 69 71 45 75 156 38 114 61 63 142 143 34 44 55 145 146 109 47 76 46 66 134 39 23 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_cpurun_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 89</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_cpustart_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 116</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\IEC60335 STM8S105x\Exe\IEC60335.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 106</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 117 79 91 29 43 49 37 48 52 35 96 28 70 53 42 21</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 98</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 99</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 88</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 75 146 44 114 109 45 47 61 76 69 46 63 66 38 71</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 69 38 45 44 71 114 61 63 75 146 109 47 76 46 66</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_fullRam_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 54</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\SelfTestLib\src\stm8s_stl_transpRam_Mx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 102</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 32</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 101</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 75 146 44 114 109 45 47 61 76 69 46 63 66 38</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 76 38 109 66 44 146 47 46 114 75 45 61 69 63</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\src\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 91</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 118</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 199 145 142 134 143 34 124 23 13 156 39 201 186 185 179 184 180 181 182 183 171 172 177 161 175 170 173 164 165 167 146 166 176 178 168 169 174 162 163 159 160 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_transpRam_Mc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 123</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 103</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 129 146 127 19 20 41 135 26 130 132 125 22 136 7</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 146 136 20 7 130 127 135 125 129 19 41 26 132 22</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm8s_stl_crc16_IAR.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 104</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 100</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cstartup.s</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 79</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 27 147</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm8s_stl_fullRam_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 54</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Drivers\BSP\STM8128_EVAL\mono_lcd_WL.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 87</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 86</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 148 129 146 127 145 142 134 143 34 124 23 13 156 39 19 20 41 135 26 130 132 125 158 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\src\stm8s_it.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 53</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 120</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 133 201 186 185 179 184 180 181 182 183 171 172 177 161 175 170 173 164 165 167 146 199 145 142 134 143 34 124 23 13 156 39 166 176 178 168 169 174 162 163 159 160 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_transpRam_Mx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 102</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 101</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 129 146 127 19 20 41 135 26 130 132 125 22 136 7</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 130 7 20 136 127 146 135 125 129 19 41 26 132 22</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm8s_stl_cpustart_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 116</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_crcrun.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 81</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 108</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 127 145 142 134 143 34 124 23 13 156 39 157 146 19 20 41 135 26 130 132 125 158 7 141</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 143 142 41 145 132 19 26 158 39 124 7 157 20 135 130 125 134 34 127 141 156 23 13 146</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_clockrun.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 33</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 51</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 127 145 142 134 143 34 124 23 13 156 39 157 146 19 20 41 135 26 130 132 125 158 7</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 143 142 41 145 132 19 26 158 39 124 7 157 20 135 130 125 134 34 127 156 23 13 146</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 98</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 88</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 127 145 142 134 143 34 124 23 13 156 39 157 146 19 20 41 135 26 130 132 125 158 7 141</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 124 145 132 39 142 41 143 141 19 26 158 134 34 7 157 20 135 130 125 156 23 13 146 127</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_crc16_IAR.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 104</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 100</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 157 146 127 145 142 134 143 34 124 23 13 156 39 19 20 41 135 26 130 132 125 158 7 141</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 130 7 20 134 34 127 141 146 157 135 125 39 142 23 124 145 19 41 26 132 158 156 143 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_fullRam_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 54</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm8s_stl_cpurun_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 89</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_transpRam.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 70</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 112</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 199 145 142 134 143 34 124 23 13 156 39 201 186 185 179 184 180 181 182 183 171 172 177 161 175 170 173 164 165 167 146 166 176 178 168 169 174 162 163 159 160</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_clockstart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 43</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 50</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 199 145 142 134 143 34 124 23 13 156 39 201 186 185 179 184 180 181 182 183 171 172 177 161 175 170 173 164 165 167 146 166 176 178 168 169 174 162 163 159 160</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 96</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 80</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 199 145 142 134 143 34 124 23 13 156 39 201 186 185 179 184 180 181 182 183 171 172 177 161 175 170 173 164 165 167 146 166 176 178 168 169 174 162 163 159 160 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_crc16_IAR.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 48</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 115</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 201 186 185 179 184 180 181 182 183 171 172 177 161 175 170 173 164 165 167 146 199 145 142 134 143 34 124 23 13 156 39 166 176 178 168 169 174 162 163 159 160 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_cpustart_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 37</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_startup.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 28</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 119</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 199 145 142 134 143 34 124 23 13 156 39 201 186 185 179 184 180 181 182 183 171 172 177 161 175 170 173 164 165 167 146 166 176 178 168 169 174 162 163 159 17 160</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_cpurun_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 49</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_fullRam_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 35</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_crcrun.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 52</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 77</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 199 145 142 134 143 34 124 23 13 156 39 201 186 185 179 184 180 181 182 183 171 172 177 161 175 170 173 164 165 167 146 166 176 178 168 169 174 162 163 159 160 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Libraries\STM8_SelfTest_Library\src\stm8_stl_clockrun.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 29</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 113</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 199 145 142 134 143 34 124 23 13 156 39 201 186 185 179 184 180 181 182 183 171 172 177 161 175 170 173 164 165 167 146 166 176 178 168 169 174 162 163 159 160</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\src\cstartup.s</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 79</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 197 147</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_clockrun.c</name>
+            <tool>ICCSTM8</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_clockstart.c</name>
+            <tool>ICCSTM8</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\Src\main.c</name>
+            <tool>ICCSTM8</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_main.c</name>
+            <tool>ICCSTM8</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_startup.c</name>
+            <tool>ICCSTM8</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_crc16_IAR.c</name>
+            <tool>ICCSTM8</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\Src\stm8s_it.c</name>
+            <tool>ICCSTM8</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_crcrun.c</name>
+            <tool>ICCSTM8</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_transpRam.c</name>
+            <tool>ICCSTM8</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\stm8s_stl_crc16_IAR.c</name>
+            <tool>ICCSTM8</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>IEC60355 STM8S005x</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_clockrun.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_clockstart.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\Src\main.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_main.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\cstartup.s</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_startup.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_clockstart.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_classB_var.h</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_cpustart_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_cpurun_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_crc16_IAR.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\Src\stm8s_it.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_crcrun.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_transpRam.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_fullRam_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_transpRam.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_transpRam.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_classB_var.h</file>
+            <file>$PROJ_DIR$\..\inc\main.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_main.h</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_cpustart_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_param.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_startup.h</file>
+            <file>$TOOLKIT_DIR$\lib\dbgstm8smn.a</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_transpRam_Mc.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_clockstart.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_startup.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_cpurun_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_clockstart.h</file>
+            <file>$PROJ_DIR$\macros.m</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_startup.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_cpu.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_clockrun.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_crc16Run.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_param.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_lib.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8_stl_fullRam_Mc.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_main.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_crcrun.pbi</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_cpustart_IAR.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_transpRam.pbi</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_cpurun_IAR.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_transpRam_Mc.pbi</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8_stl_crc16_IAR.pbi</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_clockstart.pbi</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_fullRam_IAR.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8_stl_crc16_IAR.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_transpRam.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_startup.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\mono_lcd_WL.pbi</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_startup.pbi</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_transpRam_Mx.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_it.pbi</file>
+            <file>$PROJ_DIR$\lnkstm8s005xx.icf</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_main.pbi</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_transpRam_Mx.pbi</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8_stl_startup.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8_stl_cpustart_IAR.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8_stl_startup.pbi</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8_stl_main.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8_stl_cpurun_IAR.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\main.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8_stl_clockrun.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8_stl_clockrun.pbi</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8_stl_crcrun.pbi</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_transpRam_Mc.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8_stl_transpRam.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_it.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_crc16_IAR.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_clockrun.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_main.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8_stl_transpRam.pbi</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\mono_lcd_WL.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8_stl_crcrun.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8_stl_main.pbi</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8_stl_clockstart.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8_stl_clockstart.pbi</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_crc16_IAR.pbi</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\List\IEC60335.map</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_clockstart.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Exe\IEC60335.out</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\cstartup.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8_stl_fullRam_IAR.o</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_clockrun.pbi</file>
+            <file>$PROJ_DIR$\IEC60355 STM8S005x\Obj\stm8s_stl_crcrun.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_fullRam_Mc.h</file>
+            <file>$PROJ_DIR$\..\src\main.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_lib.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_transpRam_Mc.c</file>
+            <file>$PROJ_DIR$\..\Inc\stm8s.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_clockrun.h</file>
+            <file>$PROJ_DIR$\stm8s_stl_crc16_IAR.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_crc16Run.h</file>
+            <file>$PROJ_DIR$\..\inc\stm8s_it.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_cpu.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_transpRam_Mx.h</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\Inc\stm8s_it.h</file>
+            <file>$PROJ_DIR$\cstartup.s</file>
+            <file>$PROJ_DIR$\stm8s_stl_fullRam_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\..\Drivers\BSP\STM8128_EVAL\mono_lcd_WL.c</file>
+            <file>$PROJ_DIR$\..\src\stm8s_it.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\Inc\main.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_transpRam_Mx.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\macros.m</file>
+            <file>$TOOLKIT_DIR$\inc\vregs.inc</file>
+            <file>$PROJ_DIR$\..\..\..\Drivers\BSP\STM8128_EVAL\mono_lcd_wl.h</file>
+            <file>$PROJ_DIR$\stm8s_stl_cpustart_IAR.asm</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_crcrun.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_clockrun.c</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_main.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_crc16_IAR.c</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_fullRam_IAR.asm</file>
+            <file>$PROJ_DIR$\stm8s_stl_cpurun_IAR.asm</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\..\..\STM8AS128_EVAL\Inc\stm8s.h</file>
+            <file>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\inc\stm8s_stl_transpRam.h</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 86 84</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_clockrun.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 68</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 69</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 38 113 110 101 111 33 91 27 13 125 40 126 114 37 32 20 34 26 35 36 39 17 18</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 35 113 32 101 33 38 126 34 39 40 110 27 91 18 37 20 26 36 17 125 111 13 114</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_clockstart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 81</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 82</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 38 113 110 101 111 33 91 27 13 125 40 126 114 37 32 20 34 26 35 36 39 17 18</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 110 111 20 36 40 91 37 26 17 101 33 18 113 126 32 34 35 39 125 27 13 114 38</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\Src\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 67</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 61</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 38 113 110 101 111 33 91 27 13 125 40 126 114 37 32 20 34 26 35 36 39 17 18 109</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33 37 26 101 109 20 17 18 113 126 32 34 36 40 111 91 110 38 35 39 125 27 13 114</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 65</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 80</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 38 113 110 101 111 33 91 27 13 125 40 126 114 37 32 20 34 26 35 36 39 17 18 109</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33 26 101 37 17 109 20 36 40 111 91 110 18 113 126 32 34 35 39 125 27 13 114 38</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\cstartup.s</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 87</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 115 116</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_startup.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 62</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 64</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 38 113 110 101 111 33 91 27 13 125 40 126 114 37 32 20 34 26 35 36 39 17 109 18</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 101 32 33 113 35 126 34 39 40 110 27 91 37 109 18 20 26 36 17 125 111 13 38 114</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_clockstart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 85</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 49</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 94 113 110 101 111 33 91 27 13 125 40 126 114 22 23 41 102 30 97 99 92 127 7</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 110 22 127 30 101 114 113 41 99 125 111 7 126 23 102 97 92 40 13 94 27 33 91</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_cpustart_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 63</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_cpurun_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 66</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_crc16_IAR.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 51</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 48</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 126 114 38 113 110 101 111 33 91 27 13 125 40 37 32 20 34 26 35 36 39 17 18 109</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 101 32 33 37 18 114 35 38 109 126 34 39 40 110 27 91 113 20 26 36 17 125 111 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\Src\stm8s_it.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 73</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 57</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 104 126 114 38 113 110 101 111 33 91 27 13 125 40 37 32 20 34 26 35 36 39 17 18 109</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 101 32 33 37 18 126 114 35 38 109 34 39 40 110 27 91 104 113 20 26 36 17 125 111 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_crcrun.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 79</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 70</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 38 113 110 101 111 33 91 27 13 125 40 126 114 37 32 20 34 26 35 36 39 17 18 109</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33 37 26 101 109 20 17 18 113 126 32 34 36 40 111 91 110 38 35 39 125 27 13 114</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8_stl_transpRam.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 72</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 77</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 38 113 110 101 111 33 91 27 13 125 40 126 114 37 32 20 34 26 35 36 39 17 18</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 110 17 37 111 26 101 38 20 36 125 13 18 113 126 32 34 35 39 40 27 33 91 114</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8_stl_fullRam_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 88</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_transpRam.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 52</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 94 113 110 101 111 33 91 27 13 125 40 126 114 22 23 41 102 30 97 99 92 127 7</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33 41 113 99 101 22 30 127 7 126 23 102 97 92 40 111 91 110 94 125 27 13 114</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_cpustart_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 44</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_startup.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 53</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 94 113 110 101 111 33 91 27 13 125 40 126 114 22 23 41 102 30 97 99 92 127 109 7</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 125 41 13 113 99 22 30 127 110 111 101 109 7 126 23 102 97 92 40 27 33 91 114 94</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_cpurun_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 46</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\IEC60355 STM8S005x\Exe\IEC60335.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 84</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 58 87 67 68 81 66 63 51 79 88 65 62 72 73 42 24</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\src\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 67</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 61</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 96 114 94 22 23 41 102 30 97 99 92 25 103 7 117 19 113 110 101 111 33 91 27 13 125 40</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 110 13 30 94 27 19 22 25 40 7 41 99 101 117 113 114 23 102 97 92 103 96 125 111 33 91</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_transpRam_Mc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 71</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 47</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 96 114 94 22 23 41 102 30 97 99 92 25 103 7</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 114 103 23 7 97 94 102 92 96 22 41 30 99 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm8s_stl_crc16_IAR.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 74</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 83</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 96 114 94 22 23 41 102 30 97 99 92 25 103 7 19</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 30 7 22 25 94 19 41 99 96 114 23 102 97 92 103</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cstartup.s</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 87</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 31 116</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm8s_stl_fullRam_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 50</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Drivers\BSP\STM8128_EVAL\mono_lcd_WL.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 78</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 54</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 117 96 114 19</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 96 117 114 19</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\src\stm8s_it.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 73</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 57</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 100 96 114 94 22 23 41 102 30 97 99 92 25 103 7 113 110 101 111 33 91 27 13 125 40 19</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 22 101 25 111 19 30 94 40 91 7 41 99 33 113 96 114 23 102 97 92 103 110 125 27 13 100</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_transpRam_Mx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 56</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 60</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 96 114 94 22 23 41 102 30 97 99 92 25 103 7</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 114 92 7 102 94 23 97 103 96 22 41 30 99 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm8s_stl_cpustart_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 44</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_crcrun.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 90</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 43</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 94 113 110 101 111 33 91 27 13 125 40 126 114 22 23 41 102 30 97 99 92 127 7 109</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33 41 113 99 101 22 30 127 7 126 23 102 97 92 40 111 91 110 94 109 125 27 13 114</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_clockrun.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 75</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 89</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 94 113 110 101 111 33 91 27 13 125 40 126 114 22 23 41 102 30 97 99 92 127 7</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33 41 113 99 101 22 30 127 7 126 23 102 97 92 40 111 91 110 94 125 27 13 114</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Middlewares\STM8_SelfTest_Library\src\stm8s_stl_main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 76</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 59</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 94 113 110 101 111 33 91 27 13 125 40 126 114 22 23 41 102 30 97 99 92 127 7 109</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 91 113 99 40 110 41 111 109 22 30 127 101 33 7 126 23 102 97 92 125 27 13 114 94</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_crc16_IAR.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 74</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 83</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 126 114 94 113 110 101 111 33 91 27 13 125 40 22 23 41 102 30 97 99 92 127 7 109</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 125 41 13 22 7 113 99 94 109 30 127 110 111 101 126 114 23 102 97 92 40 27 33 91</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\STM8AS128_EVAL\IAR\stm8s_stl_fullRam_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 50</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm8s_stl_cpurun_IAR.asm</name>
+            <outputs>
+                <tool>
+                    <name>ASTM8</name>
+                    <file> 46</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

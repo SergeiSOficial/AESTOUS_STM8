@@ -1,0 +1,5 @@
+stm8s_it.pbi: \
+  F:\OneDrive\SS\AESTOUS\git\aestous_stm8\Firmware\src\stm8s_it.c \
+  F:\OneDrive\SS\AESTOUS\git\aestous_stm8\Firmware\EWSTM8\..\inc\stm8s_it.h \
+  F:\OneDrive\SS\AESTOUS\git\aestous_stm8\Firmware\EWSTM8\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\intrinsics.h
