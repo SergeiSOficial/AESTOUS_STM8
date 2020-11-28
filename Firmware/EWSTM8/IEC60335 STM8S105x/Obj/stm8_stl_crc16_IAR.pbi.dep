@@ -1,4 +1,0 @@
-stm8_stl_crc16_IAR.pbi: \
-  F:\OneDrive\SS\AESTOUS\git\aestous_stm8\Firmware\Libraries\STM8_SelfTest_Library\src\stm8_stl_crc16_IAR.c \
-  F:\OneDrive\SS\AESTOUS\git\aestous_stm8\Firmware\EWSTM8\..\Libraries\STM8S_StdPeriph_Driver\inc\stm8s.h \
-  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\intrinsics.h
