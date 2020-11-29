@@ -3,10 +3,8 @@
         {
             "name": "win32",
             "includePath": [
-                ".\\dependence",
                 "c:\\Program Files\\SDCC\\include",
                 "c:\\Program Files\\SDCC\\non-free\\include",
-                ".\\dependence\\build-in\\toolchain",
                 ".\\src"
             ],
             "defines": [
@@ -35,10 +33,8 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    ".\\dependence\\*",
                     "c:\\Program Files\\SDCC\\include\\*",
                     "c:\\Program Files\\SDCC\\non-free\\include\\*",
-                    ".\\dependence\\build-in\\toolchain\\*",
                     ".\\src\\*"
                 ]
             }

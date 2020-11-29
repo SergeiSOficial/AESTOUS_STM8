@@ -33,7 +33,7 @@
   * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   *
   ******************************************************************************
-  */ 
+  */
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm8_stl_lib.h"
@@ -48,23 +48,21 @@
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
 /* Global variables ---------------------------------------------------------*/
-
 #ifdef _COSMIC_
-  uint8_t putchar (char c);
+uint8_t putchar(char c);
 #endif /* _COSMIC_ */
 #ifdef _IAR_
-  int putchar (int c);
+int putchar(int c);
 #endif /* _IAR_ */
-
 /* Global inline BSP functions declaration -----------------------------------*/
-#ifdef _IAR_
-  extern void gpio_LED_init(void);
-  extern void gpio_test_init(void);
-  extern void toogle_test_pin(void);
-  extern void BSP_LED_On(uint8_t led);
-  extern void BSP_LED_Off(uint8_t led);
-  extern void BSP_LED_Toogle(uint8_t led);
-#endif /* _IAR_ */
+#if defined(EVAL_BOARD_CONTROL)
+extern void gpio_LED_init(void);
+extern void gpio_test_init(void);
+extern void toogle_test_pin(void);
+extern void BSP_LED_On(uint8_t led);
+extern void BSP_LED_Off(uint8_t led);
+extern void BSP_LED_Toogle(uint8_t led);
+#endif
 /* Private functions ---------------------------------------------------------*/
 /**
   * @brief Example firmware main entry point.
@@ -85,102 +83,30 @@
   */
 void main(void)
 {
-  /* Initialize Watch Dogs */
-  refresh_iwdog();              /* its default setting is used here - ~215ms timeout */ 
-  refresh_wwdog(0x7fu, 0x7fu);
-    
-  #if defined(EVAL_BOARD_CONTROL)
+    /* Initialize Watch Dogs */
+    refresh_iwdog(); /* its default setting is used here - ~215ms timeout */
+    refresh_wwdog(0x7fu, 0x7fu);
+
+#if defined(EVAL_BOARD_CONTROL)
     gpio_LED_init();
     gpio_test_init();
-  #endif /* EVAL_BOARD_CONTROL */
-       
-  #ifdef DEBUG
-    #ifdef STL_VERBOSE
-      STL_VerboseInit();                /* init UART if not initialized yet */
-    #endif /* STL_VERBOSE */
-    #ifdef STL_VERBOSE_RUN
-      printf("\n\r*** STM8S STL run time init ***\n\r");
-    #endif  /* STL_VERBOSE_RUN */
-  #endif /* DEBUG */
-	           	
-  enableInterrupts();
-  
-  /* init run time measurements */
-  #ifdef STL_INCL_RUN
+#endif /* EVAL_BOARD_CONTROL */
+
+    enableInterrupts();
+
+/* init run time measurements */
+#ifdef STL_INCL_RUN
     STL_InitRunTimeChecks();
-  #endif /* STL_INCL_RUN */
+#endif /* STL_INCL_RUN */
 
-  #ifdef STL_INCL_HSECSS
-    switch_clock_system(to_HSE);
-    #ifdef STL_VERBOSE_RUN
-      STL_VerboseInit(); 
-    #endif  /* STL_VERBOSE_RUN */
-  #endif /* STL_INCL_HSECSS */
-    
-  /* enable interrupts here to run time base */
-  enableInterrupts();
-    	
-  #ifdef STL_VERBOSE_RUN
-    /* Display the welcome text on first LCD line and on UART */
-     printf("\n\r*** STM8S Self-Test Library Main ***\n\r");
-  #endif /* STL_VERBOSE_RUN */
-    
-  #ifdef EVAL_BOARD_CONTROL
-  #endif /* EVAL_BOARD_CONTROL */
-      
-  while (1)
-  {
-    #ifdef STL_INCL_RUN
-      STL_DoRunTimeChecks();
-    #else
-      refresh_iwdog();                  /* For demo purposes, if hardware IWDG/WWDG is ON  */
-      refresh_wwdog(0x7fu, 0x7fu);
-    #endif /* STL_INCL_RUN */
-		
-    #ifdef EVAL_BOARD_CONTROL
-    #endif /* EVAL_BOARD_CONTROL */
-  }
+    /* enable interrupts here to run time base */
+    enableInterrupts();
+
+    while (1)
+    {
+        STL_DoRunTimeChecks();
+    }
 }
-#if defined(STL_VERBOSE_POR) || defined(STL_VERBOSE_RUN) || defined(STL_VERBOSE_FAILSAFE)
-/* ---------------------------------------------------------------------------*/
-/**
-  * @brief Re-targets the C library printf function to the UART1 or UART2 for STM8S105x.
-  * @param
-  * char Character to send
-  * @retval
-  * char Character sent
-  * @par Required preconditions:
-  * None
-  * @par Library functions called:
-  * None
-  */
-#ifdef _COSMIC_
-uint8_t putchar (char c)
-#endif /* _COSMIC_ */
-#ifdef _IAR_
-int putchar (int c)
-#endif /* _IAR_ */
-{
-  /* put c to hardware here */
-  #if defined(STM8S208) || defined(STM8S207) || defined(STM8S103) || defined(STM8S903)
-    while ((UART1->SR & UART1_SR_TC) == 0)
-    {}
-    UART1->DR = (uint8_t)(c);
-    while ((UART1->SR & UART1_SR_TC) == 0)
-    {}
-  #endif /* STM8S208, STM8S207, STM8S103, STM8S903 */
-	 
-  #if defined(STM8S105)
-    while ((UART2->SR & UART2_SR_TC) == 0);
-    UART2->DR = c;
-    while ((UART2->SR & UART2_SR_TC) == 0);
-  #endif /* STM8S105 */
-
-  return (c);
-}
-#endif /* any_verbose_defined */
-
-
 /* ---------------------------------------------------------------------------*/
 #ifdef USE_FULL_ASSERT
 
@@ -191,15 +117,15 @@ int putchar (int c)
   * @param line: assert_param error line source number
   * @retval : None
   */
-void assert_failed(u8* file, u32 line)
-{ 
-  /* User can add his own implementation to report the file name and line number,
+void assert_failed(u8 *file, u32 line)
+{
+    /* User can add his own implementation to report the file name and line number,
      ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
 
-  /* Infinite loop */
-  while (1)
-  {
-  }
+    /* Infinite loop */
+    while (1)
+    {
+    }
 }
 #endif
 /**

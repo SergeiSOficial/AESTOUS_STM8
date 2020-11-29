@@ -34,15 +34,15 @@
                 </option>
                 <option>
                     <name>ExePath</name>
-                    <state>IEC60335 STM8S105x\Exe</state>
+                    <state>IEC60335_STM8S105x\Exe</state>
                 </option>
                 <option>
                     <name>ObjPath</name>
-                    <state>IEC60335 STM8S105x\Obj</state>
+                    <state>IEC60335_STM8S105x\Obj</state>
                 </option>
                 <option>
                     <name>ListPath</name>
-                    <state>IEC60335 STM8S105x\List</state>
+                    <state>IEC60335_STM8S105x\List</state>
                 </option>
                 <option>
                     <name>GenRuntimeLibSelect</name>
@@ -65,20 +65,20 @@
                 <option>
                     <name>GenLibInFormatter</name>
                     <version>0</version>
-                    <state>2</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>GenLibInFormatterDescription</name>
-                    <state>Full formatting, without multibytes.</state>
+                    <state>Automatic choice of formatter.</state>
                 </option>
                 <option>
                     <name>GenLibOutFormatter</name>
                     <version>0</version>
-                    <state>2</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>GenLibOutFormatterDescription</name>
-                    <state>Full formatting, without multibytes.</state>
+                    <state>Automatic choice of formatter.</state>
                 </option>
                 <option>
                     <name>GenStackSize</name>
@@ -189,6 +189,7 @@
                 <option>
                     <name>CCDefines</name>
                     <state>STM8S003</state>
+                    <state>EVAL_BOARD_CONTROL</state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>

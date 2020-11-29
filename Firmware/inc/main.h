@@ -40,9 +40,6 @@
 #define __MAIN_H__
 
 /* Includes ------------------------------------------------------------------*/
-#if defined (EVAL_BOARD_LCD)
-#include "mono_lcd_wl.h"
-#endif /* EVAL_BOARD_LCD */
 
 #if defined(STL_VERBOSE_POR) || defined(STL_VERBOSE_RUN) || defined(STL_VERBOSE_FAILSAFE)
   #include <stdio.h>
@@ -52,18 +49,16 @@
 /* Exported constants --------------------------------------------------------*/
 /* Evalboard I/Os configuration */
 
-#ifdef STM8S207
-  #define LEDS_PORT (GPIOH)
-#endif /* STM8S207 */
-#if defined(STM8S105) || defined(STM8S103)
-  #define LEDS_PORT (GPIOB)
+#if defined(STM8S003)
+  #define LEDS_PORT (GPIOD)
+  #define TEST_PORT (GPIOB)
 #endif /* STM8S105 STM8S103 */
 #define TEST_PIN  (0x20u)
-#define LED1_PIN  (0x08u)
-#define LED2_PIN  (0x04u)
-#define LED3_PIN  (0x02u)
-#define LED4_PIN  (0x01u)
-#define ALL_LEDs  (LED1_PIN | LED2_PIN | LED3_PIN | LED4_PIN)
+#define LED1_PIN  (0x10u)
+#define LED2_PIN  (0x10u)
+#define LED3_PIN  (0x10u)
+#define LED4_PIN  (0x10u)
+#define ALL_LEDs  (LED1_PIN)
 
 #define LED_ERR LED4_PIN
 #define LED_NVM LED3_PIN
@@ -82,14 +77,14 @@
   /* ---------------------------------------------------------------------------*/
   INLINE_FUNCTION void gpio_test_init(void)
   {
-    LEDS_PORT->DDR |= TEST_PIN;
-    LEDS_PORT->CR1 |= TEST_PIN;
-    LEDS_PORT->ODR &= ~TEST_PIN;
+    TEST_PORT->DDR |= TEST_PIN;
+    TEST_PORT->CR1 |= TEST_PIN;
+    TEST_PORT->ODR &= ~TEST_PIN;
   }
   /* ---------------------------------------------------------------------------*/
   INLINE_FUNCTION void toogle_test_pin(void)
   {
-    LEDS_PORT->ODR ^= TEST_PIN;
+    TEST_PORT->ODR ^= TEST_PIN;
   }
   /* ---------------------------------------------------------------------------*/
   INLINE_FUNCTION void BSP_LED_On(uint8_t led)
@@ -109,9 +104,6 @@
 #endif /* EVAL_BOARD_CONTROL */
 
 /* Exported functions ------------------------------------------------------- */
-#if defined (EVAL_BOARD_LCD)
-  void InitClassB_Demo(void);
-#endif /* EVAL_BOARD_LCD */
 
 #endif /* __MAIN_H__ */
 

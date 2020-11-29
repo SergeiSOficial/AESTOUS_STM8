@@ -1,5 +1,5 @@
 {
-    "name": "aestous",
+    "name": "Firmware",
     "type": "C51",
     "mode": "Release",
     "toolchain": "SDCC",
@@ -10,9 +10,7 @@
             "depList": [
                 {
                     "name": "default",
-                    "incList": [
-                        ".\\dependence"
-                    ],
+                    "incList": [],
                     "libList": [],
                     "sourceDirList": [],
                     "defineList": []
@@ -33,12 +31,9 @@
                     "name": "toolchain",
                     "incList": [
                         "c:\\Program Files\\SDCC\\include",
-                        "c:\\Program Files\\SDCC\\non-free\\include",
-                        ".\\dependence\\build-in\\toolchain"
+                        "c:\\Program Files\\SDCC\\non-free\\include"
                     ],
-                    "sourceDirList": [
-                        ".\\dependence\\build-in\\toolchain"
-                    ],
+                    "sourceDirList": [],
                     "libList": [
                         "c:\\Program Files\\SDCC\\lib"
                     ],
@@ -51,7 +46,6 @@
         "options": "null"
     },
     "srcDirs": [
-        ".\\dependence",
         ".\\src"
     ],
     "excludeList": [],
@@ -63,5 +57,6 @@
         "bin": ".\\out\\SDCC\\aestous.hex",
         "eepromFile": "null",
         "optionByteFile": "null"
-    }
+    },
+    "miscInfo": {}
 }

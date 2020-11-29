@@ -34,7 +34,7 @@
   * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   *
   ******************************************************************************
-  */ 
+  */
 
 
 
@@ -91,7 +91,7 @@ ClockStatus STL_ClockStartUpTest(void)
       clck_sts = XCROSS_CONFIG_FAIL;
     }
     else
-    {   
+    {
       /* measure two consequent capture events */
       lsi_period = STL_MeasureLSIPeriod();
       expected_value = calc_captured_value();
@@ -107,7 +107,7 @@ ClockStatus STL_ClockStartUpTest(void)
         /* HSI +20% above expected */
         clck_sts = HSI_SOURCE_FAIL;
       }
-      
+
     #ifndef STL_INCL_HSECSS
       else
       {
@@ -124,7 +124,7 @@ ClockStatus STL_ClockStartUpTest(void)
         clck_sts = HSE_START_FAIL;
       }
       else
-      {	
+      {
         /* if HSE started OK - switch system to HSE */
         if (switch_clock_system(to_HSE) != SUCCESS)
         {
@@ -134,15 +134,15 @@ ClockStatus STL_ClockStartUpTest(void)
           STL_VerboseInit();
         #endif  /* STL_VERBOSE_POR */
       }
-    } 
-    
+    }
+
     /*-------------- Start Reference Measurement -------------------------------*/
     if (clck_sts == TEST_ONGOING)
-    {  
+    {
       /* measure two consequent capture events */
       lsi_period = STL_MeasureLSIPeriod();
       expected_value = calc_captured_value();
-    
+
       /*-------------------- HSE measurement check -------------------------*/
       if (lsi_period < (expected_value * 3u / 4u))
       {
@@ -157,11 +157,11 @@ ClockStatus STL_ClockStartUpTest(void)
       else
       {
         clck_sts = FREQ_OK;   /* Crystal or Resonator started correctly, with expected frequency */
-      }                     /* No harmonics/sub-harmonics */  
+      }                     /* No harmonics/sub-harmonics */
     }
     #endif /* STL_INCL_HSECSS */
   }
-  
+
   CtrlFlowCntInv -= CLOCK_POR_CALLEE;
   return(clck_sts);
 }
@@ -177,19 +177,19 @@ ClockStatus STL_ClockStartUpTest(void)
   * None
   * @par Library functions called:
   * None
-  */  
+  */
 #ifdef STL_INCL_HSECSS
 ErrorStatus switch_clock_system(uint8_t clck)
 {
   uint16_t time_out = CLK_SWITCH_TIMEOUT;
   ErrorStatus result = SUCCESS;
-  
+
   if (CLK->SWR != clck)
   {
     CLK->SWCR &= (uint8_t)(~CLK_SWCR_SWIF);			    /* clear SWIF flag */
     CLK->SWCR |= CLK_SWCR_SWEN;	                /* enable clock switching control */
     CLK->SWR = clck;										        /* initiate automatic switch mode */
-    #if defined (STM8L15X_MD) || defined (STM8L15X_MDP) || defined (STM8L15X_HD)    
+    #if defined (STM8L15X_MD) || defined (STM8L15X_MDP) || defined (STM8L15X_HD)
       while (((CLK->SWCR & CLK_SWCR_SWBSY) != 0u)  &&  (time_out != 0u))
     #else
       while (((CLK->SWCR & CLK_SWCR_SWIF) == 0u)  &&  (time_out != 0u))
@@ -225,17 +225,17 @@ ErrorStatus STL_LSIinit(void)
   #endif /* !STM8L10X && !STM8TL5X */
 
   CtrlFlowCnt += LSI_INIT_CALLEE;
-  
+
   /* Enable LSI */
   #if !defined(STM8L10X) && !defined(STM8TL5X)
-    #if defined (STM8L15X_MD) || defined (STM8L15X_MDP) || defined (STM8L15X_HD)    
+    #if defined (STM8L15X_MD) || defined (STM8L15X_MDP) || defined (STM8L15X_HD)
       CLK->ICKCR |= CLK_ICKCR_LSION;
     #else /* STM8AS */
       CLK->ICKR |= CLK_ICKR_LSIEN;
     #endif /* STM8L15xx */
 
     /* Wait till LSI is ready */
-    #if defined (STM8L15X_MD) || defined (STM8L15X_MDP) || defined (STM8L15X_HD)    
+    #if defined (STM8L15X_MD) || defined (STM8L15X_MDP) || defined (STM8L15X_HD)
       while (((CLK->ICKCR & CLK_ICKCR_LSIRDY) == 0u) && (time_out != 0u))
     #else /* STM8AS */
       while (((CLK->ICKR & CLK_ICKR_LSIRDY) == 0u) && (time_out != 0u))
@@ -255,7 +255,7 @@ ErrorStatus STL_LSIinit(void)
       CLK->PCKENR1 |= (u8)(CLK_PCKENR1_AWU);
     #endif /* STM8TL15X */
   #endif /* !STM8L10X && !STM8TL5X */
-	
+
   CtrlFlowCntInv -= LSI_INIT_CALLEE;
 
   return (result);
@@ -282,19 +282,19 @@ ErrorStatus STL_HSE_CSSinit(void)
   CtrlFlowCnt += HSE_INIT_CALLEE;
 
   /* Start-up the oscillator (HSE: High-speed External) */
-  #if defined (STM8L15X_MD) || defined (STM8L15X_MDP) || defined (STM8L15X_HD)    
+  #if defined (STM8L15X_MD) || defined (STM8L15X_MDP) || defined (STM8L15X_HD)
     CLK->ECKCR |= CLK_ECKCR_HSEON;
   #else
     CLK->ECKR |= CLK_ECKR_HSEEN;
   #endif  /* STM8L15xx */
 
   /* Wait till HSE is ready */
-  #if defined (STM8L15X_MD) || defined (STM8L15X_MDP) || defined (STM8L15X_HD)    
+  #if defined (STM8L15X_MD) || defined (STM8L15X_MDP) || defined (STM8L15X_HD)
     while (((CLK->ECKCR & CLK_ECKCR_HSERDY) == 0u) && (time_out != 0u))
   #else
     while (((CLK->ECKR & CLK_ECKR_HSERDY) == 0u) && (time_out != 0u))
   #endif  /* STM8L15xx */
-    { 
+    {
       --time_out;
     }
 
@@ -338,9 +338,9 @@ ErrorStatus STL_HSE_CSSinit(void)
 uint16_t calc_captured_value(void)
 {
   uint16_t capt_val;
-	
-  #if !defined(STM8L10X) && !defined(STM8TL5X)        
-    #if defined (STM8L15X_MD) || defined (STM8L15X_MDP) || defined (STM8L15X_HD)    
+
+  #if !defined(STM8L10X) && !defined(STM8TL5X)
+    #if defined (STM8L15X_MD) || defined (STM8L15X_MDP) || defined (STM8L15X_HD)
       switch ( CLK->SCSR )
       {
         case 0x01:
@@ -373,11 +373,11 @@ uint16_t calc_captured_value(void)
   #else /* caae of STM8L 8K */
     capt_val = (uint16_t)((4u * HSI_VALUE / LSI_VALUE) >> (CLK->CKDIVR & CLK_CKDIVR_HSIDIV));
   #endif /* !STM8L10X && !STM8TL5X */
-  
+
   #if defined(EVAL_BOARD_LCD)
     LSI_Calculated = capt_val;
   #endif /* EVAL_BOARD_LCD */
-  
+
   return (capt_val);
 }
 /*---------------------------------------------------------------------------*/
@@ -390,9 +390,9 @@ ErrorStatus STL_InitClock_Xcross_Measurement(void)
 {
   uint16_t time_out = FREQ_MEAS_TIMEOUT;
   ErrorStatus sts = SUCCESS;
-  
+
   CtrlFlowCnt += XCLK_MEASURE_INIT_CALLEE;
-   
+
   #if defined (STM8L15X_MD) || defined (STM8L15X_MDP) || defined (STM8L15X_HD) || defined (STM8L10X) || defined (STM8TL5X)
     /* Start-up BEEP on LSI clock frequency */
     /* enable clock to TIM2 */
@@ -415,7 +415,7 @@ ErrorStatus STL_InitClock_Xcross_Measurement(void)
       /* LSI clock connected to TIM2 Input Capture 1 to measure LSI frequency */
       BEEP->CSR1 |= BEEP_CSR1_MSR;
     #endif /* STM8Lxxx */
-      
+
     /* Enable capture of 4 events on TIM2_CC1 */
     TIM2->PSCR = 0u;                       /* init divider register /1	*/
     TIM2->ARRH = 0xffu;			   /* init ARR & OC1 compare registers */
@@ -426,7 +426,7 @@ ErrorStatus STL_InitClock_Xcross_Measurement(void)
     /* CC1 input capture, no filter, divider= 4 */
     TIM2->CCMR1 &= (uint8_t)(~(TIM_CCMR_ICxPSC | TIM_CCMR_CCxS));
     TIM2->CCMR1 |= ((2u << 2) & TIM_CCMR_ICxPSC) | (1u & TIM_CCMR_CCxS);
-                                      
+
     TIM2->CCER1 = TIM_CCER1_CC1E; 			/* CC1 IC enable, rising edge */
     TIM2->CR1 |= (uint8_t)(TIM_CR1_URS | TIM_CR1_CEN); 	/* enable timer */
 
@@ -440,10 +440,10 @@ ErrorStatus STL_InitClock_Xcross_Measurement(void)
   #if defined(STM8S208) || defined(STM8S207) || defined(STM8S105)
     /* enable clock to TIM3 */
     CLK->PCKENR1 |= (CLK_PCKENR1_TIM3);
-    
+
     /* LSI clock connected to TIM3 Input Capture 1 to measure LSI frequency */
     AWU->CSR |= AWU_CSR_MSR;
-  
+
     /* Enable capture of 4 events on TIM3_CC1 */
     TIM3->PSCR = 0u;                                    /* init divider register /1 */
     TIM3->ARRH = 0xffu;			                /* init ARR & OC1 compare registers */
@@ -461,14 +461,14 @@ ErrorStatus STL_InitClock_Xcross_Measurement(void)
       --time_out;
     }
   #endif /* STM8S208 || STM8S207 || STM8S105 */
-    
+
   #if defined(STM8S103) || defined(STM8S903)
     /* enable clock to TIM1 */
     CLK->PCKENR1 |= (CLK_PCKENR1_TIM1);
-      
+
     /* LSI clock connected to TIM1 Input Capture 1 to measure LSI frequency */
     AWU->CSR |= AWU_CSR_MSR;
-    
+
     /* Enable capture of 4 events on TIM1_CC1 */
     TIM1->PSCRH = 0u;                                   /* init divider register /1 */
     TIM1->PSCRL = 0u;
@@ -485,9 +485,9 @@ ErrorStatus STL_InitClock_Xcross_Measurement(void)
       --time_out;
     }
   #endif /* STM8S103 || STm8S903 */
-        
+
   CtrlFlowCntInv -= XCLK_MEASURE_INIT_CALLEE;
-  
+
   if (time_out == 0u)
   {
     sts = ERROR;
@@ -509,17 +509,22 @@ ErrorStatus STL_InitClock_Xcross_Measurement(void)
   */
 uint16_t STL_MeasureLSIPeriod(void)
 {
+#if defined(STM8L15X_MD) || defined(STM8L15X_MDP) || defined(STM8L15X_HD) || \
+    defined(STM8L10X) || defined(STM8TL5X) || defined(STM8S208) || \
+        defined(STM8S207) || defined(STM8S105) || defined(STM8S103) || defined(STM8S903)
+
   uint16_t time_out = LSI_MEASURE_TIMEOUT;
   static uint16_t temp_cc1;
   static uint16_t temp_cc1_last;
+#endif
   static uint16_t period;
-    
+
   CtrlFlowCnt += XLCK_LSI_PERIOD_CALLEE;
-    
+
   #if defined(STM8L15X_MD) || defined(STM8L15X_MDP) || defined(STM8L15X_HD) || defined(STM8L10X) || defined(STM8TL5X)
     TIM2->SR2 &= (uint8_t)(~TIM_SR2_CC1OF);    /* clear CC1 overcapture flag */
     TIM2->SR1 &= (uint8_t)(~TIM_SR1_CC1IF);    /* clear CC1 capture flag */
-    
+
     /* wait for a next capture event on cc1 */
     while (((TIM2->SR1 & TIM_SR1_CC1IF) != TIM_SR1_CC1IF) && (time_out != 0u))
     {
@@ -529,13 +534,13 @@ uint16_t STL_MeasureLSIPeriod(void)
     temp_cc1_last = ((uint16_t)(TIM2->CCR1H) << 8);
     temp_cc1_last += TIM2->CCR1L;          /* preload register is frozen till CCR1L value is not read */
     /* The CC1IF flag is already cleared here be reading CCR1L register */
-    
+
     /* wait for one more capture event on cc1 */
     while (((TIM2->SR1 & TIM_SR1_CC1IF) != TIM_SR1_CC1IF) && (time_out != 0u))
     {
       --time_out;
     }
-        
+
     /* if there is no or over capture event return zero period */
     if (((TIM2->SR2 & TIM_SR2_CC1OF) != 0u))
     {
@@ -558,7 +563,7 @@ uint16_t STL_MeasureLSIPeriod(void)
   #if defined(STM8S208) || defined(STM8S207) || defined(STM8S105)
     TIM3->SR2 &= (uint8_t)(~TIM3_SR2_CC1OF);    /* clear CC1 overcapture flag */
     TIM3->SR1 &= (uint8_t)(~TIM3_SR1_CC1IF);    /* clear CC1 capture flag */
-    
+
     /* wait for a next capture event on cc1 */
     while (((TIM3->SR1 & TIM3_SR1_CC1IF) != TIM3_SR1_CC1IF) && (time_out != 0u))
     {
@@ -568,13 +573,13 @@ uint16_t STL_MeasureLSIPeriod(void)
     temp_cc1_last = ((uint16_t)(TIM3->CCR1H) << 8);
     temp_cc1_last += TIM3->CCR1L;          /* preload register is frozen till CCR1L value is not read */
     /* The CC1IF flag is already cleared here be reading CCR1L register */
-    
+
     /* wait for one more capture event on cc1 */
     while (((TIM3->SR1 & TIM3_SR1_CC1IF) != TIM3_SR1_CC1IF) && (time_out != 0u))
     {
       --time_out;
     }
-        
+
     /* if there is no or over capture event return zero period */
     if (((TIM3->SR2 & TIM3_SR2_CC1OF) != 0u))
     {
@@ -593,25 +598,25 @@ uint16_t STL_MeasureLSIPeriod(void)
       period = temp_cc1 - temp_cc1_last;
     }
   #endif /* STM8S208 || STM8S207 || STM8S105 */
-  
-  #if defined(STM8S103) || defined(STM8S903)  
+
+  #if defined(STM8S103) || defined(STM8S903)
     /* wait for a next capture event on cc1 */
     while (((TIM1->SR1 & TIM1_SR1_CC1IF) != TIM1_SR1_CC1IF) && (time_out != 0u))
-    { 
+    {
       --time_out;
     }
-    
+
     /* Get first CCR1 value*/
     temp_cc1_last = (TIM1->CCR1H << 8);
     temp_cc1_last += TIM1->CCR1L;          /* preload register is frozen till CCR1L value is not read */
     /* The CC1IF flag is already cleared here be reading CCR1L register */
-    
+
     /* wait for one more capture event on cc1 */
     while (((TIM1->SR1 & TIM1_SR1_CC1IF) != TIM1_SR1_CC1IF) && (time_out != 0u))
-    { 
+    {
       --time_out;
     }
-        
+
     /* if there is no or over capture event return zero period */
     if (((TIM1->SR2 & TIM1_SR2_CC1OF) != 0u) || (time_out == 0))
     {
@@ -626,11 +631,11 @@ uint16_t STL_MeasureLSIPeriod(void)
       period = temp_cc1 - temp_cc1_last;
     }
   #endif /* STM8S103 || STM8S903 */
-  
+
   #if defined(EVAL_BOARD_LCD)
     LSI_Measured = period;
   #endif /* EVAL_BOARD_LCD */
-    
+
   CtrlFlowCntInv -= XLCK_LSI_PERIOD_CALLEE;
   return (period);
 }

@@ -34,7 +34,7 @@
   * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   *
   ******************************************************************************
-  */ 
+  */
 
 
 /* Includes ------------------------------------------------------------------*/
@@ -82,7 +82,7 @@ void STL_InitRunTimeChecks(void)
   #if defined (EVAL_BOARD_CONTROL)
     toogle_test_pin();
   #endif /* EVAL_BOARD_CONTROL */
-    
+
   /* Init Class B variables required in main routine and TIM4 Timebase interrupt
   service routine for timing purposes */
   TickCounter = 0u;
@@ -101,20 +101,20 @@ void STL_InitRunTimeChecks(void)
   /* Initialize variables for invariable memory check */
   CtrlFlowCnt = 0u;
   CtrlFlowCntInv = 0xFFFFu;
-  
+
   #ifndef STL_INCL_POR
     LSI_HSIStartUpFreqkHz = 0u;
     LSI_HSEStartUpFreqkHz = 0u;
   #endif  /* STL_INCL_POR */
 
-  #ifdef STL_INCL_RUN_RAM  
+  #ifdef STL_INCL_RUN_RAM
     CtrlFlowCnt = RAM_MARCH_INIT_CALLER;
     STL_TranspMarchInit();
     CtrlFlowCntInv -= RAM_MARCH_INIT_CALLER;
   #endif /* STL_INCL_RUN_RAM */
 
   /* Initialize variables for invariable memory check */
-  #ifdef STL_INCL_RUN_FLASH 
+  #ifdef STL_INCL_RUN_FLASH
     #ifndef CRC_CHECK_8
       STL_FlashCrc16Init();
     #else
@@ -130,10 +130,10 @@ void STL_InitRunTimeChecks(void)
     {
       fail_safe_assert( 0x10u, "Abnormal Clock Test routine termination (main init)");
     }
-    
+
     CtrlFlowCntInv -= LSI_CHECK_INIT_CALLER;
   #endif /* STL_INCL_RUN_CLOCK */
-  
+
   #ifdef STL_INCL_RUN_STACK
     /* For stack overflow detection function */
     aStackOverFlowPtrn[0] = 0xEEu;
@@ -142,7 +142,7 @@ void STL_InitRunTimeChecks(void)
     aStackOverFlowPtrn[3] = 0xCCu;
   #endif /* STL_INCL_RUN_STACK */
 
-  /* Initialize timer to provide main System timebase */  
+  /* Initialize timer to provide main System timebase */
   #if defined(STL_INCL_RUN_RAM) || defined(STL_INCL_RUN_FLASH)
     CtrlFlowCnt += TIM_BASE_INIT_CALLER;
     STL_TimeBaseInit();
@@ -164,7 +164,7 @@ void STL_InitRunTimeChecks(void)
     CtrlFlowCnt = 0u;
     CtrlFlowCntInv = 0xFFFFu;
   }
-  
+
   #if defined (EVAL_BOARD_CONTROL)
     toogle_test_pin();
   #endif /* EVAL_BOARD_CONTROL */
@@ -197,8 +197,9 @@ void STL_DoRunTimeChecks(void)
       BSP_LED_Toogle(LED_NVM);
     #endif /* EVAL_BOARD_CONTROL */
 
+    uint8_t tempTimeBaseFlagInv = TimeBaseFlagInv; // for fix undefined behavior: the order of volatile accesses is undefined in this statement
     /* Verify Time base flag integrity (class B variable) */
-    if ((TimeBaseFlag ^ TimeBaseFlagInv) == 0xFFu)
+    if ((TimeBaseFlag ^ tempTimeBaseFlagInv) == 0xFFu)
     {
       ClassBTestStatus RomTest;
       /* Reset Flag (no need to reset the redundant: it is not tested if
@@ -228,7 +229,7 @@ void STL_DoRunTimeChecks(void)
         if (STL_CheckStack() != SUCCESS)
         {
           fail_safe_assert( 0x13u, "Stack overflow");
-        }  
+        }
         else
         {
           CtrlFlowCntInv -= STACK_OVERFLOW_CALLER;
@@ -237,29 +238,29 @@ void STL_DoRunTimeChecks(void)
       /*----------------------------------------------------------------------*/
       /*------------------------- Clock monitoring ---------------------------*/
       /*----------------------------------------------------------------------*/
- 
+
       #ifdef STL_INCL_RUN_CLOCK
         CtrlFlowCnt += FREQ_TEST_CALLER;
-        
+
         switch (STL_ClockFreqTest())
         {
           case FREQ_OK:
-          case TEST_ONGOING:    
+          case TEST_ONGOING:
             CtrlFlowCntInv -= FREQ_TEST_CALLER;
             break;
-    
+
           case EXT_SOURCE_FAIL:
             fail_safe_assert( 0x14u, "EXT clock frequency error (clock test)");
             break;
-    
+
           case HSI_SOURCE_FAIL:
             fail_safe_assert( 0x15u, "Syst clock frequency error (clock test)");
             break;
-            
+
           case CLASS_B_VAR_FAIL:
             fail_safe_assert( 0x16u, "Class B variable error (clock test)");
             break;
-            
+
           case LSI_START_FAIL:
           case HSE_START_FAIL:
           case HSI_HSE_SWITCH_FAIL:
@@ -269,7 +270,7 @@ void STL_DoRunTimeChecks(void)
             break;
         }
       #endif /* STL_INCL_RUN_CLOCK */
-    
+
       /*----------------------------------------------------------------------*/
       /*------------------ Invariable memory CRC check -----------------------*/
       /*----------------------------------------------------------------------*/
@@ -281,7 +282,7 @@ void STL_DoRunTimeChecks(void)
           case TEST_RUNNING:
             CtrlFlowCntInv -= FLASH_RUN_TEST_CALLER;
             break;
-    
+
           case TEST_OK:
             #if defined (EVAL_BOARD_CONTROL)
               BSP_LED_Toogle(LED_NVM);
@@ -289,9 +290,9 @@ void STL_DoRunTimeChecks(void)
             #ifdef STL_VERBOSE_RUN
               putchar('*');             /* Flash check finished OK */
             #endif /* STL_VERBOSE_RUN */
-            CtrlFlowCntInv -= FLASH_RUN_TEST_CALLER;           
+            CtrlFlowCntInv -= FLASH_RUN_TEST_CALLER;
             break;
-    
+
           case TEST_FAILURE:
           case CLASS_B_DATA_FAIL:
           case CTRL_FLW_ERROR:
@@ -302,7 +303,7 @@ void STL_DoRunTimeChecks(void)
       #else /* test result ignored */
         RomTest = TEST_OK;
       #endif /* STL_INCL_RUN_FLASH */
-    
+
       /*----------------------------------------------------------------------*/
       /*---------------- Check Safety routines Control flow  -----------------*/
       /*------------- Refresh Window and independent watchdogs ---------------*/
@@ -326,7 +327,7 @@ void STL_DoRunTimeChecks(void)
           else  /* Return value form crc check was corrupted */
           {
             fail_safe_assert( 0x19u, "Control Flow Error (main loop, Flash CRC)");
-          }  
+          }
         }
         else  /* Flash test not completed yet */
         {
@@ -348,11 +349,11 @@ void STL_DoRunTimeChecks(void)
     {
       fail_safe_assert( 0x1Cu, "Class B variable error (time base check)");
     }
-    
+
     #if defined (EVAL_BOARD_CONTROL)
       toogle_test_pin();
     #endif /* EVAL_BOARD_CONTROL */
-    
+
     /* Reload WWDG and IWDG counters */
     #if !defined(STM8L10X)  && !defined(STM8TL5X)
       refresh_wwdog(WWDG_PERIOD, WWDG_WINDOW);
@@ -435,7 +436,7 @@ ErrorStatus STL_CheckStack(void)
 void STL_TimeBaseInit(void)
 {
   CtrlFlowCnt += TIM_BASE_INIT_CALLEE;
-  
+
   /* Time base configuration */
 #ifdef STM8S903
   CLK->PCKENR1 |= CLK_PCKENR1_TIM6;      /* enable clock to TIM6 */
@@ -444,7 +445,7 @@ void STL_TimeBaseInit(void)
     TIM6->ARR = (uint8_t)187;                 /* auto reload gives 1ms period @ 187,5kHz (24MHz/128) */
   #else
     TIM6->ARR = (uint8_t)124;                 /* auto reload gives 1ms period @ 125kHz (16MHz/128) */
-  #endif /* STL_INCL_HSECSS */ 
+  #endif /* STL_INCL_HSECSS */
   TIM6->IER |= TIM6_IER_UIE;             /* enable TIM6 update interrupt */
   ITC->ISPR6 |= (uint8_t)(1u << 6);           /* set the highest priority level for TIM6 due to RAM transparent test */
   TIM6->CR1 |= TIM6_CR1_CEN;             /* counter enable */
@@ -464,7 +465,7 @@ void STL_TimeBaseInit(void)
   ITC->ISPR6 |= (uint8_t)(1u << 6);           /* set the highest priority level for TIM4 due to RAM transparent test */
   TIM4->CR1 |= TIM4_CR1_CEN;             /* counter enable */
 #endif /* STM8S903 */
-  
+
   CtrlFlowCntInv -= TIM_BASE_INIT_CALLEE;
 }
 #endif /* STL_INCL_RUN */
