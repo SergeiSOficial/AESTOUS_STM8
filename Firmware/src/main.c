@@ -79,7 +79,7 @@ void main(void)
     /* enable interrupts here to run time base */
     enableInterrupts();
 
-    application();
+    AppInit();
     while (1)
     {
         STL_DoRunTimeChecks();
