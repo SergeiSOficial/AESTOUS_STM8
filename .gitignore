@@ -59,3 +59,4 @@ Firmware/EWSTM8/IEC60335_STM8S105x
 *.dep
 *.pbi
 *.IEC60335_STM8S105x.general.xcl
+*.dnx

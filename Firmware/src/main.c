@@ -39,7 +39,7 @@
 #include "stm8_stl_lib.h"
 #include "stm8_stl_classB_var.h"
 #include "main.h"
-
+#include "app.h"
 /**
   * @addtogroup ClassBDemo
   * @{
@@ -48,21 +48,7 @@
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
 /* Global variables ---------------------------------------------------------*/
-#ifdef _COSMIC_
-uint8_t putchar(char c);
-#endif /* _COSMIC_ */
-#ifdef _IAR_
-int putchar(int c);
-#endif /* _IAR_ */
 /* Global inline BSP functions declaration -----------------------------------*/
-#if defined(EVAL_BOARD_CONTROL)
-extern void gpio_LED_init(void);
-extern void gpio_test_init(void);
-extern void toogle_test_pin(void);
-extern void BSP_LED_On(uint8_t led);
-extern void BSP_LED_Off(uint8_t led);
-extern void BSP_LED_Toogle(uint8_t led);
-#endif
 /* Private functions ---------------------------------------------------------*/
 /**
   * @brief Example firmware main entry point.
@@ -72,14 +58,6 @@ extern void BSP_LED_Toogle(uint8_t led);
   * None
   * @par Required preconditions:
   * None
-  * @par Library functions called:
-  * - InitClassB_Demo()
-  * - STL_VerboseInit()
-  * - STL_InitRunTimeChecks()
-  * - STL_DoRunTimeChecks()
-  * - LCD_SetCursorPos()
-  * - LCD_Print()
-  * - printf()
   */
 void main(void)
 {
@@ -87,10 +65,9 @@ void main(void)
     refresh_iwdog(); /* its default setting is used here - ~215ms timeout */
     refresh_wwdog(0x7fu, 0x7fu);
 
-#if defined(EVAL_BOARD_CONTROL)
-    gpio_LED_init();
-    gpio_test_init();
-#endif /* EVAL_BOARD_CONTROL */
+    CLK_DeInit();
+    CLK_SYSCLKConfig(CLK_PRESCALER_CPUDIV1);
+    CLK_SYSCLKConfig(CLK_PRESCALER_HSIDIV1); // set 16 MHz for CPU
 
     enableInterrupts();
 
@@ -102,6 +79,7 @@ void main(void)
     /* enable interrupts here to run time base */
     enableInterrupts();
 
+    application();
     while (1)
     {
         STL_DoRunTimeChecks();
