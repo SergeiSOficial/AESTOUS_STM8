@@ -54,6 +54,8 @@ dkms.conf
 
 Firmware/EWSTM8/IEC60335_STM8S105x
 /Firmware/EWSTM8/IEC60335_STM8S105x
+/Firmware/EWSTM8/STM8S003
+/Firmware/EWSTM8/settings
 *STM8S105x/
 *IEC60335_STM8S105x/
 *.dep

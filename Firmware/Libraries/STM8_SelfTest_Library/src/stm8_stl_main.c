@@ -149,21 +149,23 @@ void STL_InitRunTimeChecks(void)
     CtrlFlowCntInv -= TIM_BASE_INIT_CALLER;
   #endif /* STL_INCL_RUN_RAM || STL_INCL_RUN_FLASH */
 
-  /* Check that all initialization routines were correctly executed */
-  if (((CtrlFlowCnt ^ CtrlFlowCntInv) != 0xFFFFu)
-     || (CtrlFlowCnt != CHECKPOINT_INIT ))
-  {
-    fail_safe_assert( 0x11u, "Control Flow Error (Main init)");
-  }
-  else
-  {
-    #ifdef STL_VERBOSE_RUN
-      printf("Control Flow OK (Main init)\n\r");
-    #endif  /* STL_VERBOSE_RUN */
-    /* Initialize variables for main routine control flow monitoring */
-    CtrlFlowCnt = 0u;
-    CtrlFlowCntInv = 0xFFFFu;
-  }
+  #if defined(STL_INCL_RUN_CLOCK)
+    /* Check that all initialization routines were correctly executed */
+    if (((CtrlFlowCnt ^ CtrlFlowCntInv) != 0xFFFFu)
+        || (CtrlFlowCnt != CHECKPOINT_INIT ))
+        {
+            fail_safe_assert( 0x11u, "Control Flow Error (Main init)");
+        }
+    else
+        {
+  #ifdef STL_VERBOSE_RUN
+            printf("Control Flow OK (Main init)\n\r");
+  #endif  /* STL_VERBOSE_RUN */
+            /* Initialize variables for main routine control flow monitoring */
+            CtrlFlowCnt = 0u;
+            CtrlFlowCntInv = 0xFFFFu;
+        }
+  #endif /* STL_INCL_RUN_CLOCK */
 
   #if defined (EVAL_BOARD_CONTROL)
     toogle_test_pin();
@@ -301,6 +303,7 @@ void STL_DoRunTimeChecks(void)
             break;
         }
       #else /* test result ignored */
+        FlashCrc16_Block_test();
         RomTest = TEST_OK;
       #endif /* STL_INCL_RUN_FLASH */
 

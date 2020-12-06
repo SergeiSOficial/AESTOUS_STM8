@@ -34,7 +34,7 @@
   * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   *
   ******************************************************************************
-  */ 
+  */
 
 
 /* Define to prevent recursive inclusion -------------------------------------*/
@@ -55,20 +55,20 @@
 
   /* Next parameters control including Class B tests during power-on phase */
   #define STL_INCL_POR        /* Include all start up tests - reset vector points to Class B start up routine */
-  #define STL_INCL_POR_CPU    /* Include CPU start up test */
+  //#define STL_INCL_POR_CPU    /* Include CPU start up test */
   #define STL_INCL_POR_WDOG   /* Include IWDOG start up test */
-  #define STL_INCL_POR_FLASH  /* Include Flash CRC start up test - disable it when use break points! */
-  #define STL_INCL_POR_RAM    /* Include full RAM march C start up test */
-  #define STL_INCL_POR_CLOCK  /* Include clock start up test */
-  
+  //#define STL_INCL_POR_FLASH  /* Include Flash CRC start up test - disable it when use break points! */
+  //#define STL_INCL_POR_RAM    /* Include full RAM march C start up test */
+  //#define STL_INCL_POR_CLOCK  /* Include clock start up test */
+
   /* Next parameters control including Class B tests during main program execution */
   #define STL_INCL_RUN        /* Include all run time tests */
-  #define STL_INCL_RUN_CPU    /* Include CPU run time test */
-  #define STL_INCL_RUN_STACK  /* Include stack boundaries run time test */
-  #define STL_INCL_RUN_CLOCK  /* Include clock run time test */
-  #define STL_INCL_RUN_FLASH  /* Include flash CRC run time test */
-  #define STL_INCL_RUN_RAM    /* Include partial RAM march C run time test in interrupt */
-  #define STL_RUN_USE_MARCHX  /* use march X instead C for partial RAM run time test */
+//  #define STL_INCL_RUN_CPU    /* Include CPU run time test */
+//  #define STL_INCL_RUN_STACK  /* Include stack boundaries run time test */
+//  #define STL_INCL_RUN_CLOCK  /* Include clock run time test */
+  //#define STL_INCL_RUN_FLASH  /* Include flash CRC run time test */
+//  #define STL_INCL_RUN_RAM    /* Include partial RAM march C run time test in interrupt */
+//  #define STL_RUN_USE_MARCHX  /* use march X instead C for partial RAM run time test */
 
 #if defined(STM8S903) || defined(STM8S103) || defined(STM8S003) || defined(STM8L10X) || defined(STM8TL5X)
   #undef STL_INCL_HSECSS
@@ -96,7 +96,7 @@
 
 /*  #define CRC_CHECK_8           CRC 8 bit simple computation enable (16-bit is default) */
 /*  #define CRC_CHECK_FAR         CRC computation for far model enable (64KB is default) */
-    
+
   /* These are the direct and inverted data (pattern) used during the RAM
   test, performed using March C- Algorithm */
   #define BCKGRND     ((uint8_t)0x00)
@@ -138,7 +138,7 @@
   #define to_HSE  ((uint8_t)0xB4)
   #define to_HSI  ((uint8_t)0xE1)
   #define to_LSI  ((uint8_t)0xD2)
-#endif /* STM8L15X_xxx */    
+#endif /* STM8L15X_xxx */
 
   /* -------------------------------------------------------------------------- */
   /* ------------------ CONTROL FLOW TAGS and CHECKPOINTS --------------------- */
@@ -168,7 +168,7 @@
   /* RAM_TEST_CALLEE is only needed for CtrlFlowCntInv when exiting routine */
   /* This is because the RAM test routines destroys the control flow counters */
   #define RAM_TEST_CALLEE         (0xFFFFFFFFuL)
-  
+
 
 
 #ifdef STL_INCL_POR_CLOCK
@@ -197,7 +197,7 @@
                        LSI_INIT_CALLEE + \
                        XCLK_MEASURE_INIT_CALLEE +\
                        XLCK_LSI_PERIOD_CALLEE)
-             
+
 #else
   #define CHECKPOINT2 ((uint16_t)CLOCK_POR_CALLER + \
                        CLOCK_POR_CALLEE + \
@@ -225,7 +225,7 @@
 #endif /* STL_INCL_RUN_STACK */
 
   #define CLOCKPERIOD_TEST_CALLEE (37u)
-  
+
 #ifdef STL_INCL_RUN_FLASH
   #define CRC16_RUN_TEST_CALLEE   (41u)
   #define CRC32_RUN_TEST_CALLEE   (43u)
@@ -235,7 +235,7 @@
   #define CRC32_RUN_TEST_CALLEE   (0u)
   #define FLASH_RUN_TEST_CALLER   (0u)
 #endif /* STL_INCL_RUN_FLASH */
-  
+
 #ifdef STL_INCL_RUN_CLOCK
   #define FREQ_TEST_CALLER        (21u)
   #define FREQ_TEST_CALLEE        (23u)
@@ -248,7 +248,7 @@
   #define LSI_CHECK_INIT_CALLER	  (0u)
   #define LSI_MEASURE_CALLEE_     (0u)
 #endif /* STL_INCL_RUN_CLOCK */
-                        
+
   #define DELTA_MAIN  (uint16_t)(CPU_RUN_CALLER + \
                             CPU_RUN_CALLEE + \
                             STACK_OVERFLOW_CALLER + \
@@ -258,21 +258,21 @@
                             XLCK_LSI_PERIOD_CALLEE + \
                             FLASH_RUN_TEST_CALLER + \
                             CRC16_RUN_TEST_CALLEE)
-                            
+
   #define LAST_DELTA_MAIN ((uint16_t) DELTA_MAIN)
   #define FULL_FLASH_CHECKED (uint16_t)((DELTA_MAIN * CRC_NUMB_BLOCKS) & 0xFFFFu)
 
   /* ISR tests */
   #define CLOCKPERIOD_ISR_CALLEE  (5u)
 
-  
+
 #ifdef STL_INCL_RUN_RAM
-    #define RAM_MARCH_INIT_CALLER  (37u) 
+    #define RAM_MARCH_INIT_CALLER  (37u)
     #define RAM_MARCH_INIT_CALLEE  (41u)
     #define RAM_MARCH_ISR_CALLER   (7u)
     #define RAM_MARCH_ISR_CALLEE   (11u)
-#else  
-    #define RAM_MARCH_INIT_CALLER  (0u) 
+#else
+    #define RAM_MARCH_INIT_CALLER  (0u)
     #define RAM_MARCH_INIT_CALLEE  (0u)
     #define RAM_MARCH_ISR_CALLER   (0u)
     #define RAM_MARCH_ISR_CALLEE   (0u)
@@ -293,15 +293,19 @@
                                    LSI_CHECK_INIT_CALLEE +\
                                    TIM_BASE_INIT_CALLER +\
                                    TIM_BASE_INIT_CALLEE)
+//#define CHECKPOINT_INIT ((uint16_t)RAM_MARCH_INIT_CALLER +\
+//                                   RAM_MARCH_INIT_CALLEE +\
+//                                   TIM_BASE_INIT_CALLER +\
+//                                   TIM_BASE_INIT_CALLEE)
 
   /* This is for March C tests */
 #define DELTA_ISR  ((uint16_t) RAM_MARCH_ISR_CALLER + \
                                RAM_MARCH_ISR_CALLEE)
 
 /* Constants necessary for Transparent March tests defined at icf linker file.
-   CLASS_B_START points out first address and CLASS_B_END the last one to be tested. 
+   CLASS_B_START points out first address and CLASS_B_END the last one to be tested.
    NOTE: The tested area includes additional overlaps at its begin and end to test crosstalks
-         of the fisrt and last tested addresses. If the number of the tested adresses 
+         of the fisrt and last tested addresses. If the number of the tested adresses
          is not multiply of the block size, additional redundant addresses to fit the
          step size are tested during the last step perfromed at the end of the area */
 #ifdef _COSMIC_
@@ -318,7 +322,7 @@
 #define RT_RAM_BLOCKSIZE      ((uint16_t)4u)  /* Number of RAM cells tested at once */
 #define RT_RAM_BLOCK_OVERLAP  ((uint16_t)1u)  /* Min overlap to cover coupling fault from a tested block to the other */
 
-/* The buffer size must be bigger than the number of tested bytes at single step: it must include also adjacent memory cells 
+/* The buffer size must be bigger than the number of tested bytes at single step: it must include also adjacent memory cells
    for buffer self-test to check coupling faults of all RAM buffer bytes used for temporary storage */
 #define RT_RAM_BUF_SIZE       (RT_RAM_BLOCKSIZE + 4u * RT_RAM_BLOCK_OVERLAP)
 
@@ -334,7 +338,7 @@
 #ifdef _IAR_
   /* uncomment next line to include slow CRC calculation instead of fast one */
   /* #define SLOW_CRC_FLASH_CHECK */
-  
+
   /* Number of bytes totally tested at Flash CRC calculation from start address */
       /* !!! This value must be fully divided by CRC block size !!! */
   #define CRC_FLASH_SIZE ((uint16_t)(&__checksum_end) - (uint16_t)(&__checksum_begin) + 1u)
@@ -365,10 +369,10 @@
     #endif /* STM8xxx */
   #endif /* _COSMIC_ */
 
-  /* __stext is the COSMIC compiler entry point, normally executed right after 
+  /* __stext is the COSMIC compiler entry point, normally executed right after
   reset, but bypassed by self-test routines */
 #ifdef _COSMIC_
-#define GotoCompilerStartUp() _asm("xdef __stext\n" "jp __stext\n"); 
+#define GotoCompilerStartUp() _asm("xdef __stext\n" "jp __stext\n");
 //extern @inline void fail_safe_assert(uint8_t err_code, char *verb_txt);
 #endif /* _COSMIC_ */
 #ifdef _IAR_

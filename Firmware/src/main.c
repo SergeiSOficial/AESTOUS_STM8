@@ -36,8 +36,8 @@
   */
 
 /* Includes ------------------------------------------------------------------*/
-//#include "stm8_stl_lib.h"
-//#include "stm8_stl_classB_var.h"
+#include "stm8_stl_lib.h"
+#include "stm8_stl_classB_var.h"
 #include "main.h"
 #include "stm8s.h"
 #include "app.h"
@@ -63,17 +63,18 @@
 void main(void)
 {
     /* Initialize Watch Dogs */
-//    refresh_iwdog(); /* its default setting is used here - ~215ms timeout */
-//    refresh_wwdog(0x7fu, 0x7fu);
+    refresh_iwdog(); /* its default setting is used here - ~215ms timeout */
+    refresh_wwdog(0x7fu, 0x7fu);
 
-    CLK_DeInit();
-    CLK_SYSCLKConfig(CLK_PRESCALER_CPUDIV1);
-    CLK_SYSCLKConfig(CLK_PRESCALER_HSIDIV1); // set 16 MHz for CPU
+    /* no need config CLK because in changed before start in STL_StartUp()*/
+//    CLK_DeInit();
+//    CLK_SYSCLKConfig(CLK_PRESCALER_CPUDIV1);
+//    CLK_SYSCLKConfig(CLK_PRESCALER_HSIDIV1); // set 16 MHz for CPU
 
 
 /* init run time measurements */
 #ifdef STL_INCL_RUN
-    //STL_InitRunTimeChecks();
+    STL_InitRunTimeChecks();
 #endif /* STL_INCL_RUN */
 
     /* enable interrupts here to run time base */
@@ -82,7 +83,10 @@ void main(void)
     //AppInit();
     while (1)
     {
-        //STL_DoRunTimeChecks();
+        STL_DoRunTimeChecks();
+        refresh_iwdog();
+        refresh_wwdog(0x7fu, 0x7fu);
+
     }
 }
 /* ---------------------------------------------------------------------------*/
