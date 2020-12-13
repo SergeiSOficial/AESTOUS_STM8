@@ -63,3 +63,4 @@ Firmware/EWSTM8/IEC60335_STM8S105x
 *.IEC60335_STM8S105x.general.xcl
 *.dnx
 *.wsdt
+*.dbgdt

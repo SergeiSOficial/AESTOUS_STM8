@@ -459,8 +459,13 @@ INTERRUPT_HANDLER(ADC2_IRQHandler, 22)
   */
 INTERRUPT_HANDLER(ADC1_IRQHandler, 22)
 {
+    ADC1_Cmd(DISABLE);
     ADC1_ClearITPendingBit(ADC1_IT_EOC);
     AppADCHandler();
+    /* Select the ADC1 channel */
+    ADC1->CSR |= (uint8_t)(ADC1_CHANNEL_4);
+    ADC1_StartConversion();
+
   /* In order to detect unexpected events during development,
        it is recommended to set a breakpoint on the following instruction.
     */

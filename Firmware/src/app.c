@@ -23,7 +23,7 @@
 #define ADC_GPIO_PINS2 (GPIO_PIN_4)
 #define ADC_GPIO_PORT2 (GPIOC)
 
-#define ADC_CHANNELS (ADC1_CHANNEL_2 | ADC1_CHANNEL_3 | ADC1_CHANNEL_4)
+#define ADC_CHANNELS ADC1_CHANNEL_4//(ADC1_CHANNEL_2 | ADC1_CHANNEL_3 | ADC1_CHANNEL_4)
 
 static uint16_t CCR1_Val = 8000;
 
@@ -44,8 +44,8 @@ void pwm_config(void);
 void AppInit(void)
 {
     adc_config();
-    timers_config();
-    pwm_config();
+    //timers_config();
+    //pwm_config();
 }
 
 //void gpio_config(void)
@@ -60,18 +60,17 @@ void adc_config(void)
 
     ADC1_DeInit();
     ADC1_ScanModeCmd(ENABLE);
-    ADC1_DataBufferCmd(ENABLE);
+    //ADC1_DataBufferCmd(ENABLE);
     ADC1_ITConfig(ADC1_IT_EOCIE, ENABLE);
     ADC1_Init(ADC1_CONVERSIONMODE_CONTINUOUS,
               (ADC1_Channel_TypeDef)(ADC_CHANNELS),
-              ADC1_PRESSEL_FCPU_D2,
-              ADC1_EXTTRIG_TIM, ENABLE,
+              ADC1_PRESSEL_FCPU_D18,
+              ADC1_EXTTRIG_TIM, DISABLE,
               ADC1_ALIGN_RIGHT,
               ADC1_SCHMITTTRIG_ALL, DISABLE);
 
     /* Enable EOC interrupt */
     ADC1_Cmd(ENABLE);
-    ADC1_StartConversion();
 }
 
 void timers_config(void)
@@ -130,7 +129,7 @@ void pwm_config(void)
 
 void AppADCHandler(void)
 {
-    adc_battarey = ADC1_GetBufferValue(ADC1_CHANNEL_5) / 204.8;
-    adc_button = ADC1_GetBufferValue(ADC1_CHANNEL_6) / 204.8;
-    adc_charge_cap = ADC1_GetBufferValue(ADC1_CHANNEL_3) / 204.8 * 40;
+    adc_battarey = ADC1_GetBufferValue(ADC1_CHANNEL_2) / 204.8;
+    adc_button = ADC1_GetBufferValue(ADC1_CHANNEL_3) / 204.8;
+    adc_charge_cap = ADC1_GetBufferValue(ADC1_CHANNEL_4) / 204.8 * 40;
 }

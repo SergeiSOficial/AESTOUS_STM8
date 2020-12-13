@@ -80,7 +80,7 @@ void main(void)
     /* enable interrupts here to run time base */
     enableInterrupts();
 
-    //AppInit();
+    AppInit();
     while (1)
     {
         STL_DoRunTimeChecks();
